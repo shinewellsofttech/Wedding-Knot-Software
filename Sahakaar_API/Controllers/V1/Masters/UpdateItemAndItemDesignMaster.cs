@@ -161,11 +161,15 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 {
                     if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif")
                     {
-                        using (var image = Image.FromStream(file.OpenReadStream()))
+                        //using (var image = Image.FromStream(file.OpenReadStream()))
+                        //{
+                        //    Size imgSize = new Size(300, 300);
+                        //    var imageResized = Lib.clsFunctions.ResizeImage(image, imgSize);
+                        //    imageResized.Save(filePath);
+                        //}
+                        using (var stream = new FileStream(filePath, FileMode.Create))
                         {
-                            Size imgSize = new Size(300, 300);
-                            var imageResized = Lib.clsFunctions.ResizeImage(image, imgSize);
-                            imageResized.Save(filePath);
+                            await file.CopyToAsync(stream);
                         }
                     }
                     else if (extension == ".pdf" || extension == ".doc" || extension == ".docx")
