@@ -1595,3 +1595,4 @@ D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\ne
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\ref\Sahakaar_API.dll
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.pdb
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.genruntimeconfig.cache
+D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.csprojAssemblyReference.cache

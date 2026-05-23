@@ -1137,5 +1137,15 @@ public class mStockH
         public decimal UserId { get; set; } = 0;
         public decimal F_CompanyMaster { get; set; } = 0;
     }
-    
+    public class mPurchaseEntry
+    {
+        public DateTime? EntryDate { get; set; } = null;
+        public String? EntryNo { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public string Remarks { get; set; } = string.Empty;
+        public decimal UserId { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+        public decimal F_CompanyMaster { get; set; } = 0;
+    }
+
 }
