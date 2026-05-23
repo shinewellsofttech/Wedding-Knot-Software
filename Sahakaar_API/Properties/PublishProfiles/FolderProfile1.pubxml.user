@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>G:\Bhagirath-Reddy\zPublished\Sahakaar_API</_PublishTargetUrl>
+    <History>False|2022-07-11T06:48:34.9880532Z;False|2022-07-08T12:04:28.1537581+05:30;False|2022-06-17T18:59:21.0511159+05:30;False|2022-06-17T18:58:35.0488671+05:30;False|2022-06-17T18:58:24.8155304+05:30;False|2022-06-17T18:58:19.5040445+05:30;True|2022-05-24T17:35:00.3019516+05:30;True|2022-05-20T16:29:14.9175912+05:30;True|2022-03-27T02:57:47.3437375+05:30;True|2022-03-27T02:38:39.5744508+05:30;True|2022-03-27T02:23:23.5922063+05:30;True|2022-03-27T02:23:11.7695877+05:30;True|2022-03-27T02:22:31.8168369+05:30;True|2022-03-27T02:01:31.0314160+05:30;True|2022-03-26T05:38:57.9342480+05:30;True|2022-03-26T05:28:25.6742479+05:30;True|2022-03-26T05:17:39.0196399+05:30;True|2022-03-26T04:40:10.7013090+05:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DBConnectionString">
+      <Value>Server=SHINEWELL%3bInitial Catalog=dbSahakaar%3bPersist Security Info=False%3bUser ID=sa%3bPassword=xWtz#4j62UV4y%3bMultipleActiveResultSets=True%3bEncrypt=false%3bTrustServerCertificate=true%3bMax Pool Size=1000%3bConnect Timeout=1200000%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

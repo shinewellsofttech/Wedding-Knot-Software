@@ -1,0 +1,5 @@
+F:\Client-Data\Bhagirath-Reddy\Sites-Upwork\Scoring App (Axe-Game)\Axe-Venture_API\Axe-Venture_API\obj\Debug\netcoreapp3.1\Axe-Venture_API.AssemblyInfoInputs.cache
+F:\Client-Data\Bhagirath-Reddy\Sites-Upwork\Scoring App (Axe-Game)\Axe-Venture_API\Axe-Venture_API\obj\Debug\netcoreapp3.1\Axe-Venture_API.AssemblyInfo.cs
+F:\Client-Data\Bhagirath-Reddy\Sites-Upwork\Scoring App (Axe-Game)\Axe-Venture_API\Axe-Venture_API\obj\Debug\netcoreapp3.1\Axe-Venture_API.csproj.CoreCompileInputs.cache
+F:\Client-Data\Bhagirath-Reddy\Sites-Upwork\Scoring App (Axe-Game)\Axe-Venture_API\Axe-Venture_API\obj\Debug\netcoreapp3.1\Axe-Venture_API.MvcApplicationPartsAssemblyInfo.cs
+F:\Client-Data\Bhagirath-Reddy\Sites-Upwork\Scoring App (Axe-Game)\Axe-Venture_API\Axe-Venture_API\obj\Debug\netcoreapp3.1\Axe-Venture_API.MvcApplicationPartsAssemblyInfo.cache

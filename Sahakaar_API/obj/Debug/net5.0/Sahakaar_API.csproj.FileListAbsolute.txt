@@ -1,0 +1,477 @@
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.AssemblyReference.cache
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.GeneratedMSBuildEditorConfig.editorconfig
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.AssemblyInfoInputs.cache
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.AssemblyInfo.cs
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.CoreCompileInputs.cache
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.MvcApplicationPartsAssemblyInfo.cs
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.MvcApplicationPartsAssemblyInfo.cache
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\ref\Sahakaar_API.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.pdb
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\appsettings.Development.json
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\appsettings.json
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.exe
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.deps.json
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.runtimeconfig.json
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.runtimeconfig.dev.json
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Dapper.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\MailKit.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\MimeKit.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Newtonsoft.Json.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\NuGet.Frameworks.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Convention.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Hosting.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Runtime.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Composition.TypedParts.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Drawing.Common.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Runtime.Caching.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\Sahakaar_API.StaticWebAssets.Manifest.cache
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\Sahakaar_API.StaticWebAssets.xml
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\scopedcss\bundle\Sahakaar_API.styles.css
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.RazorTargetAssemblyInfo.cache
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.CopyComplete
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.genruntimeconfig.cache
+G:\Shinewell\Sahakaar_API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\ref\Sahakaar_API.dll
+G:\Shinewell\Sahakaar_API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.pdb
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\appsettings.Development.json
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\appsettings.json
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.StaticWebAssets.xml
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.exe
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.deps.json
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.runtimeconfig.json
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.runtimeconfig.dev.json
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.pdb
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Dapper.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\MailKit.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\MimeKit.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\NuGet.Frameworks.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Drawing.Common.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\GHANA API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.AssemblyReference.cache
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.GeneratedMSBuildEditorConfig.editorconfig
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.AssemblyInfoInputs.cache
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.AssemblyInfo.cs
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.CoreCompileInputs.cache
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.MvcApplicationPartsAssemblyInfo.cs
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.MvcApplicationPartsAssemblyInfo.cache
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\scopedcss\bundle\Sahakaar_API.styles.css
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\Sahakaar_API.StaticWebAssets.Manifest.cache
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.RazorTargetAssemblyInfo.cache
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.CopyComplete
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.dll
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\refint\Sahakaar_API.dll
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.pdb
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.genruntimeconfig.cache
+D:\GHANA API\Sahakaar_API\obj\Debug\net5.0\ref\Sahakaar_API.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\appsettings.Development.json
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.StaticWebAssets.xml
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\web.config
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\appsettings.json
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.exe
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.deps.json
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.runtimeconfig.json
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.runtimeconfig.dev.json
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Sahakaar_API.pdb
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Dapper.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\MailKit.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\MimeKit.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\NuGet.Frameworks.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Drawing.Common.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.AssemblyReference.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.GeneratedMSBuildEditorConfig.editorconfig
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.AssemblyInfoInputs.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.AssemblyInfo.cs
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.csproj.CoreCompileInputs.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.MvcApplicationPartsAssemblyInfo.cs
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.MvcApplicationPartsAssemblyInfo.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.RazorTargetAssemblyInfo.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\scopedcss\bundle\Sahakaar_API.styles.css
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\Sahakaar_API.StaticWebAssets.Manifest.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\Sahakaar_API.StaticWebAssets.Pack.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\msbuild.Sahakaar_API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\msbuild.build.Sahakaar_API.props
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Sahakaar_API.props
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Sahakaar_API.props
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar.CCEB8E21.Up2Date
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\refint\Sahakaar_API.dll
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.pdb
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\Sahakaar_API.genruntimeconfig.cache
+D:\.company\Merchant_Ronak\API\Sahakaar_API\obj\Debug\net5.0\ref\Sahakaar_API.dll
