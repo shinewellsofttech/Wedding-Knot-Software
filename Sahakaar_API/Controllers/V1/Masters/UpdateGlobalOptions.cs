@@ -67,14 +67,15 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 }
                 dbPara.Add("FirmName", dataReceived.FirmName, DbType.String);
                 dbPara.Add("F_FinancialYearMaster", dataReceived.F_FinancialYearMaster, DbType.Decimal);
-                dbPara.Add("PoNo", dataReceived.PoNo, DbType.Decimal);
-                dbPara.Add("SoNo", dataReceived.SoNo, DbType.Decimal);
-                dbPara.Add("AllowNegativeStock", dataReceived.AllowNegativeStock, DbType.Boolean);
-                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
                 dbPara.Add("F_StateMaster", dataReceived.F_StateMaster, DbType.Decimal);
                 dbPara.Add("F_CityMaster", dataReceived.F_CityMaster, DbType.Decimal);
                 dbPara.Add("FirmAddress", dataReceived.FirmAddress, DbType.String);
                 dbPara.Add("GSTNo", dataReceived.GSTNo, DbType.String);
+                dbPara.Add("PANNo", dataReceived.PANNo, DbType.String);
+                dbPara.Add("MobileNo", dataReceived.MobileNo, DbType.String);
+                dbPara.Add("EmailId", dataReceived.EmailId, DbType.String);
+                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
+
 
                 /****/
                 var data = mModel;

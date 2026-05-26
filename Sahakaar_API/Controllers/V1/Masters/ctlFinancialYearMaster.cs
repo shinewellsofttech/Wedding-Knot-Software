@@ -14,25 +14,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using System.Data;
-using System.IO;
-using System.Drawing;
-using Sahakaar_API.Lib;
-
 
 namespace Sahakaar_API.Controllers.V1.Masters
 {
-    [Route("api/V1/UpdateItemOpeningBalance")]
+    [Route("api/V1/FinancialYearMaster")]
     [ApiController]
-    public class ctlUpdateItemOpeningBalance : ControllerBase
+    public class ctlFinancialYearMaster : ControllerBase
     {
         private readonly svcCommon _svc;
         private readonly IWebHostEnvironment _environment;
-        private readonly string sTableName = "ItemMaster";
-        private readonly string sListFor = "Member";
-        private readonly string sAddEdit_ProcedureName = "UpdateItemOpeningBalance";
-        private readonly string sImageFolder = "MemberImages";
+        private readonly string sTableName = "FinancialYearMaster";
+        private readonly string sListFor = "Country";
+        private readonly string sAddEdit_ProcedureName = "AddEdit_FinancialYearMaster";
         private readonly mCommon mModel = new mCommon();
-        public ctlUpdateItemOpeningBalance(svcCommon svc, IWebHostEnvironment environment)
+        public ctlFinancialYearMaster(svcCommon svc, IWebHostEnvironment environment)
         {
             this._svc = svc;
             this._environment = environment;
@@ -46,7 +41,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Add(string UserId, string UserToken, [FromForm] mUpdateItemOpeningBalance dataReceived)
+        public async Task<IActionResult> Add(string UserId, string UserToken, [FromForm] mFinancialYearMaster dataReceived)
         {
             return await Add_Edit(UserId, UserToken, Id: 0, dataReceived: dataReceived);
         }
@@ -56,11 +51,11 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Update(string UserId, string UserToken, [FromForm] mUpdateItemOpeningBalance dataReceived, decimal Id)
+        public async Task<IActionResult> Update(string UserId, string UserToken, [FromForm] mFinancialYearMaster dataReceived, decimal Id)
         {
             return await Add_Edit(UserId, UserToken, Id: Id, dataReceived: dataReceived);
         }
-        private async Task<IActionResult> Add_Edit(string UserId, string UserToken, decimal Id, mUpdateItemOpeningBalance dataReceived)
+        private async Task<IActionResult> Add_Edit(string UserId, string UserToken, decimal Id, mFinancialYearMaster dataReceived)
         {
             try
             {
@@ -70,22 +65,24 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 {
                     dbPara.Add("Id", Id);
                 }
-                //Information
+                dbPara.Add("FinancialYearFrom", dataReceived.FinancialYearFrom, DbType.DateTime);
+                dbPara.Add("FinancialYearTo", dataReceived.FinancialYearTo, DbType.DateTime);
+                dbPara.Add("F_FirmMaster", dataReceived.F_FirmMaster, DbType.Decimal);
+                dbPara.Add("IsCurrentFinancialYear", dataReceived.IsCurrentFinancialYear, DbType.Boolean);
 
-                dbPara.Add("F_ItemGroupMaster", dataReceived.F_ItemGroupMaster, DbType.Decimal);
-                dbPara.Add("StrItemOpeningBalance", dataReceived.StrItemOpeningBalance, DbType.String);
-                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
-
+                /****/
                 var data = mModel;
                 var response = await _svc.Insert_Update(dbPara: dbPara);
                 if (response > 0)
                 {
                     data.Id = response;
+                    //data.Name = dataReceived.Name;
                     return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record " + (Id == 0 ? "added." : "updated"), Data = new { data } });
                 }
                 else if (response == -1)
                 {
                     data.Id = response;
+                   // data.Name = dataReceived.Name;
                     return NotFound(new Response { Success = false, Status = StatusCodes.Status208AlreadyReported, Message = "Data already exists.", Data = new { data } });
                 }
 
@@ -96,6 +93,5 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
             }
         }
-        
     }
 }

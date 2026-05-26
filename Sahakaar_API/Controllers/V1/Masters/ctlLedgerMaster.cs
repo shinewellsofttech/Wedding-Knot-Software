@@ -65,10 +65,43 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 {
                     dbPara.Add("Id", Id);
                 }
-                dbPara.Add("F_LedgerGroupMaster", dataReceived.F_LedgerGroupMaster, DbType.Decimal);
                 dbPara.Add("Name", dataReceived.Name, DbType.String);
+                dbPara.Add("Alias", dataReceived.Alias, DbType.String);
+                dbPara.Add("F_LedgerGroupMaster", dataReceived.F_LedgerGroupMaster, DbType.Decimal);
                 dbPara.Add("Address", dataReceived.Address, DbType.String);
-                dbPara.Add("MobileNo", dataReceived.MobileNo, DbType.Decimal);
+                dbPara.Add("Address1", dataReceived.Address1, DbType.String);
+                dbPara.Add("F_CityMaster", dataReceived.F_CityMaster, DbType.Decimal);
+                dbPara.Add("F_StateMaster", dataReceived.F_StateMaster, DbType.Decimal);
+                dbPara.Add("F_CountryMaster", dataReceived.F_CountryMaster, DbType.Decimal);
+                dbPara.Add("PinCode", dataReceived.PinCode, DbType.String);
+                dbPara.Add("PhoneNo", dataReceived.PhoneNo, DbType.String);
+                dbPara.Add("MobileNo", dataReceived.MobileNo, DbType.String);
+                dbPara.Add("Email", dataReceived.Email, DbType.String);
+                dbPara.Add("GSTIN", dataReceived.GSTIN, DbType.String);
+                dbPara.Add("PANNo", dataReceived.PANNo, DbType.String);
+                dbPara.Add("F_GSTGroupMaster", dataReceived.F_GSTGroupMaster, DbType.Decimal);
+                dbPara.Add("F_GSTType", dataReceived.F_GSTType, DbType.String);
+                dbPara.Add("F_TaxPayerType", dataReceived.F_TaxPayerType, DbType.String);
+                dbPara.Add("CreditDays", dataReceived.CreditDays, DbType.Decimal);
+                dbPara.Add("CreditLimit", dataReceived.CreditLimit, DbType.Decimal);
+                dbPara.Add("Rate", dataReceived.Rate, DbType.Decimal);
+                dbPara.Add("F_Type", dataReceived.F_Type, DbType.String);
+                dbPara.Add("F_CalculationType", dataReceived.F_CalculationType, DbType.String);
+                dbPara.Add("F_AddLess", dataReceived.F_AddLess, DbType.String);
+                dbPara.Add("YesNoActs", dataReceived.YesNoActs, DbType.Boolean);
+                dbPara.Add("F_LedgerMasterSales", dataReceived.F_LedgerMasterSales, DbType.Decimal);
+                dbPara.Add("F_LedgerMasterPurchase", dataReceived.F_LedgerMasterPurchase, DbType.Decimal);
+                dbPara.Add("F_YearScheme", dataReceived.F_YearScheme, DbType.String);
+                dbPara.Add("F_IntCalcMethod", dataReceived.F_IntCalcMethod, DbType.String);
+                dbPara.Add("BankName", dataReceived.BankName, DbType.String);
+                dbPara.Add("BankAccountNo", dataReceived.BankAccountNo, DbType.String);
+                dbPara.Add("BankIFSCCode", dataReceived.BankIFSCCode, DbType.String);
+                dbPara.Add("ISDalal", dataReceived.ISDalal, DbType.Boolean);
+                dbPara.Add("F_LedgerMasterDalal", dataReceived.F_LedgerMasterDalal, DbType.Decimal);
+                dbPara.Add("IsTransport", dataReceived.IsTransport, DbType.Boolean);
+                dbPara.Add("F_TCSonSales", dataReceived.F_TCSonSales, DbType.Decimal);
+                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
+                dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
 
                 /****/
                 var data = mModel;
