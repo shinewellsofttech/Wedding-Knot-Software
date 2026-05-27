@@ -70,13 +70,13 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("EntryNo", dataReceived.EntryNo, DbType.String);
                 dbPara.Add("F_LedgerMaster", dataReceived.F_LedgerMaster, DbType.Decimal);
                 dbPara.Add("Remarks", dataReceived.Remarks, DbType.String);
-                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
-                dbPara.Add("JsonData", dataReceived.JsonData, DbType.String);
-                dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
                 dbPara.Add("TotalCGST", dataReceived.TotalCGST, DbType.Decimal);
                 dbPara.Add("TotalSGST", dataReceived.TotalSGST, DbType.Decimal);
                 dbPara.Add("TotalIGST", dataReceived.TotalIGST, DbType.Decimal);
                 dbPara.Add("TotalTax", dataReceived.TotalTax, DbType.Decimal);
+                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
+                dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
+                dbPara.Add("JsonData", dataReceived.JsonData, DbType.String);
 
                 /****/
                 var data = mModel;

@@ -77,7 +77,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
                 dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
                 dbPara.Add("JsonData", dataReceived.JsonData, DbType.String);
-
+                dbPara.Add("OtherChargesJson", dataReceived.OtherChargesJson, DbType.String);
 
                 /****/
                 var data = mModel;
