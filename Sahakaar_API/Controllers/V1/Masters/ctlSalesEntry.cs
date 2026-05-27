@@ -17,17 +17,17 @@ using System.Data;
 
 namespace Sahakaar_API.Controllers.V1.Masters
 {
-    [Route("api/V1/PurchaseEntry")]
+    [Route("api/V1/SalesEntry")]
     [ApiController]
-    public class ctlPurchaseEntry : ControllerBase
+    public class ctlSalesEntry : ControllerBase
     {
         private readonly svcCommon _svc;
         private readonly IWebHostEnvironment _environment;
-        private readonly string sTableName = "PurchaseEntryH";
-        private readonly string sListFor = "PurchaseEntryData";
-        private readonly string sAddEdit_ProcedureName = "AddEdit_PurchaseEntry";
+        private readonly string sTableName = "SalesEntryH";
+        private readonly string sListFor = "SalesEntryData";
+        private readonly string sAddEdit_ProcedureName = "AddEdit_SalesEntry";
         private readonly mCommon mModel = new mCommon();
-        public ctlPurchaseEntry(svcCommon svc, IWebHostEnvironment environment)
+        public ctlSalesEntry(svcCommon svc, IWebHostEnvironment environment)
         {
             this._svc = svc;
             this._environment = environment;
@@ -41,7 +41,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Add(string UserId, string UserToken, [FromForm] mPurchaseEntry dataReceived)
+        public async Task<IActionResult> Add(string UserId, string UserToken, [FromForm] mSalesEntry dataReceived)
         {
             return await Add_Edit(UserId, UserToken, Id: 0, dataReceived: dataReceived);
         }
@@ -51,11 +51,11 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Update(string UserId, string UserToken, [FromForm] mPurchaseEntry dataReceived, decimal Id)
+        public async Task<IActionResult> Update(string UserId, string UserToken, [FromForm] mSalesEntry dataReceived, decimal Id)
         {
             return await Add_Edit(UserId, UserToken, Id: Id, dataReceived: dataReceived);
         }
-        private async Task<IActionResult> Add_Edit(string UserId, string UserToken, decimal Id, mPurchaseEntry dataReceived)
+        private async Task<IActionResult> Add_Edit(string UserId, string UserToken, decimal Id, mSalesEntry dataReceived)
         {
             try
             {
@@ -70,13 +70,14 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("EntryNo", dataReceived.EntryNo, DbType.String);
                 dbPara.Add("F_LedgerMaster", dataReceived.F_LedgerMaster, DbType.Decimal);
                 dbPara.Add("Remarks", dataReceived.Remarks, DbType.String);
-                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
-                dbPara.Add("JsonData", dataReceived.JsonData, DbType.String);
-                dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
                 dbPara.Add("TotalCGST", dataReceived.TotalCGST, DbType.Decimal);
                 dbPara.Add("TotalSGST", dataReceived.TotalSGST, DbType.Decimal);
                 dbPara.Add("TotalIGST", dataReceived.TotalIGST, DbType.Decimal);
                 dbPara.Add("TotalTax", dataReceived.TotalTax, DbType.Decimal);
+                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
+                dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
+                dbPara.Add("JsonData", dataReceived.JsonData, DbType.String);
+
 
                 /****/
                 var data = mModel;

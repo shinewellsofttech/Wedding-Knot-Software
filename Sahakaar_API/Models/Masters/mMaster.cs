@@ -317,6 +317,10 @@ namespace Sahakaar_API.Models.Masters
         public decimal UserId { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
         public decimal F_CompanyMaster { get; set; } = 0;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
     }
     public class mGetItemDetailByBarcode
     {
@@ -336,5 +340,19 @@ namespace Sahakaar_API.Models.Masters
         public bool IsCurrentFinancialYear { get; set; } = false;
         
     }
-    
+    public class mSalesEntry
+    {
+        public DateTime? EntryDate { get; set; } = null;
+        public String? EntryNo { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public string Remarks { get; set; } = string.Empty;
+        public decimal UserId { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+        public decimal F_CompanyMaster { get; set; } = 0;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
+    }
+
 }
