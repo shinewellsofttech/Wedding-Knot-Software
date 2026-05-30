@@ -356,5 +356,14 @@ namespace Sahakaar_API.Models.Masters
         public string OtherChargesJson { get; set; } = string.Empty;
 
     }
-
+    public class mItemSchemeMaster
+    {
+        public decimal F_ItemDesignMaster { get; set; } = 0;
+        public decimal UserId { get; set; } = 0;
+        public string SchemeJson { get; set; } = string.Empty;
+    }
+    public class mMaterialMaster
+    {
+        public string Name { get; set; } = null;
+    }
 }
