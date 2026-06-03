@@ -381,4 +381,9 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_CompanyMaster { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
     }
+    public class mCreateOrder
+    {
+        public decimal F_SalesEntryH { get; set; }
+        public decimal Amount { get; set; }
+    }
 }
