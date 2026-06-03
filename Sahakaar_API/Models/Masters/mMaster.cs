@@ -366,4 +366,19 @@ namespace Sahakaar_API.Models.Masters
     {
         public string Name { get; set; } = null;
     }
+    public class mVoucher
+    {
+        public String? VoucherNo { get; set; } = string.Empty;
+        public DateTime? VoucherDate { get; set; } = null;
+        public decimal F_VoucherTypeMaster { get; set; } = 0;
+        public String? ReferenceNo { get; set; } = string.Empty;
+        public DateTime? ReferenceDate { get; set; } = null;
+        public string? Narration { get; set; } = string.Empty;
+        public decimal TotalDr { get; set; } = 0;
+        public decimal TotalCr { get; set; } = 0;
+        public decimal CurBal { get; set; } = 0;
+        public decimal UserId { get; set; } = 0;
+        public decimal F_CompanyMaster { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+    }
 }
