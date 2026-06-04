@@ -67,7 +67,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
 
                 Dictionary<string, object> options =  new Dictionary<string, object>();
 
-                options.Add("amount", Convert.ToInt32(dataReceived.Amount * 100));
+                options.Add("amount", Convert.ToInt32(dataReceived.Amount));
                 options.Add("currency", "INR");
                 options.Add("receipt", dataReceived.F_SalesEntryH.ToString());
 
@@ -77,27 +77,17 @@ namespace Sahakaar_API.Controllers.V1.Masters
 
                 var dbPara = new DynamicParameters();
                 dbPara.Add("F_SalesEntryH", dataReceived.F_SalesEntryH, DbType.Decimal);
-                dbPara.Add("RazorpayOrderId", order["id"].ToString(), DbType.Decimal);
+                dbPara.Add("RazorpayOrderId", order["id"].ToString(), DbType.String);
                 dbPara.Add("Amount", dataReceived.Amount, DbType.Decimal);
 
                 var data = mModel;
-                var response = await _svc.Insert_Update(dbPara: dbPara);
+                var response = await _svc.Login(dbPara: dbPara);
 
 
-                if (response > 0)
+                if (response != null)
                 {
-                    data.Id = response;
-                    data.Name = dataReceived.Amount.ToString();
-
-                    return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record " + (Id == 0 ? "added." : "updated"), Data = new { data } });
+                    return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Order " + (Id == 0 ? "added." : "updated"), Data = new { response } });
                 }
-                else if (response == -1)
-                {
-                    data.Id = response;
-                    // data.Name = dataReceived.Name;
-                    return NotFound(new Response { Success = false, Status = StatusCodes.Status208AlreadyReported, Message = "Data already exists.", Data = new { data } });
-                }
-
                 return NotFound(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = "Not Found" });
             }
             catch (Exception ex)

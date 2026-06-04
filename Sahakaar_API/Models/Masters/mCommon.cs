@@ -23,6 +23,11 @@ namespace Sahakaar_API.Models.Masters
             get;
             set;
         }
+        public string Message
+        {
+            get;
+            set;
+        }
     }
     public class mImageData
     {
