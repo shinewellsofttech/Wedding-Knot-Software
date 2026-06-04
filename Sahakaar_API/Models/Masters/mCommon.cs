@@ -23,7 +23,17 @@ namespace Sahakaar_API.Models.Masters
             get;
             set;
         }
-        public string Message
+        public string PaymentUrl
+        {
+            get;
+            set;
+        }
+        public string QrCode
+        {
+            get;
+            set;
+        }
+        public decimal Amount
         {
             get;
             set;

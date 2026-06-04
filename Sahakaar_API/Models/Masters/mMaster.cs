@@ -386,4 +386,15 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_SalesEntryH { get; set; }
         public decimal Amount { get; set; }
     }
+    public class mVerifyPayment
+    {
+        public string razorpay_payment_id { get; set; }
+        public string razorpay_order_id { get; set; }
+        public string razorpay_signature { get; set; }
+    }
+    public class mPayment
+    {
+        public decimal F_SalesEntryH { get; set; }
+        public decimal Amount { get; set; }
+    }
 }
