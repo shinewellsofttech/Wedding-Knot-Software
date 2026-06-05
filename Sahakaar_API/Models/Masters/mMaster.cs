@@ -397,4 +397,9 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_SalesEntryH { get; set; }
         public decimal Amount { get; set; }
     }
+    public class mOldImages
+    {
+        public decimal Id { get; set; }
+    }
+    
 }

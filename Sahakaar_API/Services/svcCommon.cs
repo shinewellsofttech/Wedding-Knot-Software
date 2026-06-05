@@ -27,6 +27,7 @@ namespace Sahakaar_API.Services
         public string sReference_ProcedureName = "SearchReferenceBeforeDelete";
         public string sVerify_ProcedureName = "Verify_DataById";
         public string sGetImageData_ProcedureName = "GetImageNameById";
+        public string sPaymentUpdate_ProcedureName = "Update_PaymentSuccess";
 
         private readonly IDapperManager _dapperManager;
         public svcCommon(IDapperManager dapperManager)
@@ -209,6 +210,11 @@ namespace Sahakaar_API.Services
             dbPara.Add("Id", Id);
             var rdelete = Task.FromResult(_dapperManager.Execute(sVerify_ProcedureName, dbPara, commandType: CommandType.StoredProcedure));
             return rdelete;
+        }
+        public async Task<decimal> Payment_Update(DynamicParameters dbPara, string sAddEdit_Procedure = "")
+        {
+            var rId = Task.FromResult(_dapperManager.Insert_Update<decimal>(sAddEdit_Procedure != "" ? sAddEdit_Procedure : sPaymentUpdate_ProcedureName, dbPara, commandType: CommandType.StoredProcedure));
+            return await rId;
         }
     }
 

@@ -15,7 +15,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using System.Data;
 using System.IO;
-using System.Drawing;
+//using System.Drawing;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Formats.Webp;
+using SixLabors.ImageSharp.Processing;
 
 namespace Sahakaar_API.Controllers.V1.Masters
 {
@@ -29,6 +32,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
         private readonly string sListFor = "Country";
         private readonly string sAddEdit_ProcedureName = "UpdateItemAndItemDesignMaster";
         private readonly string sImageFolder = "ItemImages";
+        private readonly string sImageFolder_Thumbnail = "ItemImages/Thumbnail";
         private readonly mCommon mModel = new mCommon();
         public UpdateItemAndItemDesignMaster(svcCommon svc, IWebHostEnvironment environment)
         {
@@ -68,7 +72,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 {
                     dbPara.Add("Id", Id);
                 }
-              
+
                 dbPara.Add("Id", dataReceived.Id, DbType.Decimal);
                 dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
                 dbPara.Add("TableName", dataReceived.TableName, DbType.String);
@@ -106,7 +110,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 var response = await _svc.Insert_Update(dbPara: dbPara);
                 if (response > 0)
                 {
-                    data.Id = response;                  
+                    data.Id = response;
 
                     //data.Name = dataReceived.Name;
                     return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record " + (Id == 0 ? "added." : "updated"), Data = new { data } });
@@ -114,7 +118,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 else if (response == -1)
                 {
                     data.Id = response;
-                   // data.Name = dataReceived.Name;
+                    // data.Name = dataReceived.Name;
                     return NotFound(new Response { Success = false, Status = StatusCodes.Status208AlreadyReported, Message = "Data already exists.", Data = new { data } });
                 }
 
@@ -146,6 +150,21 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     {
                         System.IO.File.Delete(oldPath);
                     }
+
+                    // Thumbnail Image (.webp)
+                    string thumbnailFileName =
+                        Path.GetFileNameWithoutExtension(oldFileName) + ".webp";
+
+                    string thumbnailPath = Path.Combine(
+                        _environment.ContentRootPath,
+                        sImageFolder_Thumbnail,
+                        thumbnailFileName
+                    );
+
+                    if (System.IO.File.Exists(thumbnailPath))
+                    {
+                        System.IO.File.Delete(thumbnailPath);
+                    }
                 }
 
                 //rcp
@@ -161,9 +180,43 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 {
                     if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif")
                     {
+                        // Create folders if not exist
+                        Directory.CreateDirectory(
+                            Path.Combine(_environment.ContentRootPath, sImageFolder));
+
+                        Directory.CreateDirectory(
+                            Path.Combine(_environment.ContentRootPath, sImageFolder_Thumbnail));
+
+                        // Save Original Image
                         using (var stream = new FileStream(filePath, FileMode.Create))
                         {
                             await file.CopyToAsync(stream);
+                        }
+
+                        // Save Thumbnail WebP Image
+                        string thumbnailFileName =
+                            Path.GetFileNameWithoutExtension(fileName) + ".webp";
+
+                        string thumbnailPath = Path.Combine(
+                            _environment.ContentRootPath,
+                            sImageFolder_Thumbnail,
+                            thumbnailFileName);
+
+                        using (var imageStream = file.OpenReadStream())
+                        using (var image = await Image.LoadAsync(imageStream))
+                        {
+                            image.Mutate(x => x.Resize(new ResizeOptions
+                            {
+                                Size = new Size(50, 50),
+                                Mode = ResizeMode.Max // Keep aspect ratio
+                            }));
+
+                            await image.SaveAsync(
+                                thumbnailPath,
+                                new WebpEncoder
+                                {
+                                    Quality = 50
+                                });
                         }
                     }
                     else if (extension == ".pdf" || extension == ".doc" || extension == ".docx")

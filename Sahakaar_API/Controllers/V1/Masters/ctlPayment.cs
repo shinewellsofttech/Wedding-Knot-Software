@@ -21,6 +21,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using QRCoder;
 using System.IO;
+using Newtonsoft.Json.Linq;
 
 namespace Sahakaar_API.Controllers.V1.Masters
 {
@@ -128,6 +129,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("PaymentUrl", paymentUrl.ToString(), DbType.String);
                 dbPara.Add("Amount", dataReceived.Amount, DbType.Decimal);
                 dbPara.Add("Status", "PENDING", DbType.String);
+                dbPara.Add("reference_id", payload.reference_id.ToString(), DbType.String);
 
                 var data = mModel;
                 var response1 = await _svc.Login(dbPara: dbPara);
@@ -154,18 +156,73 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [Route("Webhook")]
         public async Task<IActionResult> Webhook()
         {
-            using var reader = new StreamReader(Request.Body);
+            try
+            {
+                using var reader = new StreamReader(Request.Body);
 
-            var body = await reader.ReadToEndAsync();
+                var body = await reader.ReadToEndAsync();
 
-            System.IO.File.AppendAllText(
-                @"C:\WebhookLog.txt",
-                body + Environment.NewLine +
-                "----------------------" +
-                Environment.NewLine);
+                string folderPath = Path.Combine(
+                    _environment.ContentRootPath,
+                    "Webhook");
 
-            return Ok();
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                string filePath = Path.Combine(
+                    folderPath,
+                    $"Webhook_{DateTime.Now:yyyyMMdd}.txt");
+
+                System.IO.File.AppendAllText(
+                    filePath,
+                    DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss") +
+                    Environment.NewLine +
+                    body +
+                    Environment.NewLine +
+                    "----------------------" +
+                    Environment.NewLine);
+
+                JObject data = JObject.Parse(body);
+
+                string eventName =
+                    data["event"]?.ToString();
+
+                if (eventName == "payment_link.paid")
+                {
+                    string referenceId =
+                        data["payload"]?["payment_link"]?["entity"]?["reference_id"]?.ToString();
+
+                    string paymentId =
+                        data["payload"]?["payment"]?["entity"]?["id"]?.ToString();
+
+                    string paymentLinkId =
+                        data["payload"]?["payment_link"]?["entity"]?["id"]?.ToString();
+
+                    string orderId =
+                        data["payload"]?["order"]?["entity"]?["id"]?.ToString();
+
+                    var dbPara = new DynamicParameters();
+
+                    dbPara.Add("ReferenceId", referenceId);
+                    dbPara.Add("PaymentId", paymentId);
+                    dbPara.Add("PaymentLinkId", paymentLinkId);
+                    dbPara.Add("OrderId", orderId);
+
+                    _svc.sAddEdit_ProcedureName = "Update_PaymentSuccess";
+
+                    await _svc.Insert_Update(dbPara);
+                }
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
         }
 
     }
+    
 }
