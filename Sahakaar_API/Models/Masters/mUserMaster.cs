@@ -19,6 +19,7 @@ namespace Sahakaar_API.Models.Masters
         public string Email { get; set; }
         public decimal F_UserType { get; set; }
         public decimal UserId { get; set; }
+        public decimal F_UserRole { get; set; }
     }
     public class mUserMasterOld
     {

@@ -79,11 +79,9 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("Email", dataReceived.Email, DbType.String);
                 dbPara.Add("F_UserType", dataReceived.F_UserType, DbType.Decimal);
                 dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
+                dbPara.Add("F_UserRole ", dataReceived.F_UserRole, DbType.Decimal);
 
-              
-               
-               
-               
+
                 var data = mModel;
                 var response = await _svc.Insert_Update(dbPara: dbPara);
                 if (response > 0)
