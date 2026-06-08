@@ -401,5 +401,75 @@ namespace Sahakaar_API.Models.Masters
     {
         public decimal Id { get; set; }
     }
-    
+    public class mPurchaseReturn
+    {
+        public decimal F_PurchaseEntryH { get; set; } = 0;
+        public DateTime? EntryDate { get; set; } = null;
+        public String? EntryNo { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public string Remarks { get; set; } = string.Empty;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
+        public decimal TotalAmount { get; set; } = 0;
+        public decimal UserId { get; set; } = 0;
+        public decimal F_CompanyMaster { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+    }
+    public class mSalesReturn
+    {
+        public DateTime? EntryDate { get; set; } = null;
+        public String? EntryNo { get; set; } = null;
+        public decimal F_SalesEntryH { get; set; } = 0;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public string Remarks { get; set; } = string.Empty;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
+        public decimal TotalAmount { get; set; } = 0;
+        public decimal UserId { get; set; } = 0;
+        public decimal F_CompanyMaster { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+        public string OtherChargesJson { get; set; } = string.Empty;
+
+    }
+    public class mGetLedgerDetails
+    {
+        public DateTime? FromDate { get; set; } = null;
+        public DateTime? ToDate { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public decimal ReportType { get; set; } = 0;
+        public decimal ViewType { get; set; } = 0;
+        public decimal F_VoucherTypeMaster { get; set; } = 0;
+    }
+
+    public class mUserRole
+    {
+        [Required(ErrorMessage = "Name is required.")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "Code is required.")]
+        public string Code { get; set; }
+        public string Description { get; set; }
+        public bool IsActive { get; set; } = true;
+    }
+    public class mModuleMaster
+    {
+        [Required(ErrorMessage = "Name is required.")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "Path is required.")]
+        public string Path { get; set; }
+        public bool IsActive { get; set; } = true;
+    }
+    public class mRoleWisePermission
+    {
+        [Required(ErrorMessage = "F_RoleMaster is required.")]
+        public decimal F_RoleMaster { get; set; }
+        public String DataJSON { get; set; }
+        public Decimal UserId { get; set; }
+
+    }
 }
