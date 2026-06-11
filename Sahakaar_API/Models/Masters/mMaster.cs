@@ -321,6 +321,8 @@ namespace Sahakaar_API.Models.Masters
         public decimal UserId { get; set; } = 0;
         public decimal F_CompanyMaster { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
+        public string DispatchDocNo { get; set; } = string.Empty;
+        public string DispatchedThrough { get; set; } = string.Empty;
     }
     public class mGetItemDetailByBarcode
     {
@@ -354,6 +356,8 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_CompanyMaster { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
         public string OtherChargesJson { get; set; } = string.Empty;
+        public string DispatchDocNo { get; set; } = string.Empty;
+        public string DispatchedThrough { get; set; } = string.Empty;
 
     }
     public class mItemSchemeMaster
@@ -444,7 +448,6 @@ namespace Sahakaar_API.Models.Masters
         public decimal ViewType { get; set; } = 0;
         public decimal F_VoucherTypeMaster { get; set; } = 0;
     }
-
     public class mUserRole
     {
         [Required(ErrorMessage = "Name is required.")]
