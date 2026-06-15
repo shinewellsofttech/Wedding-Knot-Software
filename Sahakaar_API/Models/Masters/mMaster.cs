@@ -41,7 +41,7 @@ namespace Sahakaar_API.Models.Masters
         public string MobileNo { get; set; } = string.Empty;
         public string EmailId { get; set; } = string.Empty;
         public decimal UserId { get; set; } = 0;
-
+        public decimal F_GSTGroupMaster { get; set; } = 0;
     }
     public class mItemMainGroupMaster
     {
@@ -485,9 +485,16 @@ namespace Sahakaar_API.Models.Masters
         public string Remarks { get; set; } = string.Empty;
         public decimal TotalRentAmount { get; set; } = 0;
         public decimal TotalSecurityDeposit { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
         public decimal F_CompanyMaster { get; set; } = 0;
         public decimal UserId { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
     }
     public class mRentReturn
     {
@@ -500,8 +507,15 @@ namespace Sahakaar_API.Models.Masters
         public string Remarks { get; set; } = string.Empty;
         public decimal TotalRentAmount { get; set; } = 0;
         public decimal TotalSecurityDeposit { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
         public decimal F_CompanyMaster { get; set; } = 0;
         public decimal UserId { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
     }
 }
