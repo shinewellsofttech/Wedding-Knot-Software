@@ -84,6 +84,8 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("F_LedgerMaster_CGST", dataReceived.F_LedgerMaster_CGST, DbType.Decimal);
                 dbPara.Add("F_LedgerMaster_SGST", dataReceived.F_LedgerMaster_SGST, DbType.Decimal);
                 dbPara.Add("F_LedgerMaster_IGST", dataReceived.F_LedgerMaster_IGST, DbType.Decimal);
+                dbPara.Add("CustomerName", dataReceived.CustomerName, DbType.String);
+                dbPara.Add("MobileNo", dataReceived.MobileNo, DbType.String);
 
                 /****/
                 var data = mModel;

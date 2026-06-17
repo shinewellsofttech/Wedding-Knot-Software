@@ -495,6 +495,8 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_LedgerMaster_CGST { get; set; } = 0;
         public decimal F_LedgerMaster_SGST { get; set; } = 0;
         public decimal F_LedgerMaster_IGST { get; set; } = 0;
+        public string CustomerName { get; set; } = string.Empty;
+        public string MobileNo { get; set; } = string.Empty;
     }
     public class mRentReturn
     {
@@ -517,5 +519,7 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_LedgerMaster_CGST { get; set; } = 0;
         public decimal F_LedgerMaster_SGST { get; set; } = 0;
         public decimal F_LedgerMaster_IGST { get; set; } = 0;
+        public string CustomerName { get; set; } = string.Empty;
+        public string MobileNo { get; set; } = string.Empty;
     }
 }
