@@ -17,17 +17,17 @@ using System.Data;
 
 namespace Sahakaar_API.Controllers.V1.Masters
 {
-    [Route("api/V1/PurchaseReturn")]
+    [Route("api/V1/MoneyPayment")]
     [ApiController]
-    public class ctlPurchaseReturn : ControllerBase
+    public class ctlMoneyPayment : ControllerBase
     {
         private readonly svcCommon _svc;
         private readonly IWebHostEnvironment _environment;
-        private readonly string sTableName = "PurchaseReturnH";
-        private readonly string sListFor = "PurchaseReturnData";
-        private readonly string sAddEdit_ProcedureName = "AddEdit_PurchaseReturn";
+        private readonly string sTableName = "MoneyPaymentH";
+        private readonly string sListFor = "MoneyPaymentData";
+        private readonly string sAddEdit_ProcedureName = "AddEdit_MoneyPayment";
         private readonly mCommon mModel = new mCommon();
-        public ctlPurchaseReturn(svcCommon svc, IWebHostEnvironment environment)
+        public ctlMoneyPayment(svcCommon svc, IWebHostEnvironment environment)
         {
             this._svc = svc;
             this._environment = environment;
@@ -41,7 +41,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Add(string UserId, string UserToken, [FromForm] mPurchaseReturn dataReceived)
+        public async Task<IActionResult> Add(string UserId, string UserToken, [FromForm] mMoneyPayment dataReceived)
         {
             return await Add_Edit(UserId, UserToken, Id: 0, dataReceived: dataReceived);
         }
@@ -51,11 +51,11 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Update(string UserId, string UserToken, [FromForm] mPurchaseReturn dataReceived, decimal Id)
+        public async Task<IActionResult> Update(string UserId, string UserToken, [FromForm] mMoneyPayment dataReceived, decimal Id)
         {
             return await Add_Edit(UserId, UserToken, Id: Id, dataReceived: dataReceived);
         }
-        private async Task<IActionResult> Add_Edit(string UserId, string UserToken, decimal Id, mPurchaseReturn dataReceived)
+        private async Task<IActionResult> Add_Edit(string UserId, string UserToken, decimal Id, mMoneyPayment dataReceived)
         {
             try
             {
@@ -66,22 +66,18 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     dbPara.Add("Id", Id);
                 }
                 //Information
-                dbPara.Add("F_PurchaseEntryH", dataReceived.F_PurchaseEntryH, DbType.Decimal);
-                dbPara.Add("EntryDate", dataReceived.EntryDate, DbType.Date);
-                dbPara.Add("EntryNo", dataReceived.EntryNo, DbType.String);
+                dbPara.Add("PaymentDate", dataReceived.PaymentDate, DbType.Date);
+                dbPara.Add("PaymentNo", dataReceived.PaymentNo, DbType.String);
                 dbPara.Add("F_LedgerMaster", dataReceived.F_LedgerMaster, DbType.Decimal);
-                dbPara.Add("Remarks", dataReceived.Remarks, DbType.String);
-                dbPara.Add("TotalCGST", dataReceived.TotalCGST, DbType.Decimal);
-                dbPara.Add("TotalSGST", dataReceived.TotalSGST, DbType.Decimal);
-                dbPara.Add("TotalIGST", dataReceived.TotalIGST, DbType.Decimal);
-                dbPara.Add("TotalTax", dataReceived.TotalTax, DbType.Decimal);
+                dbPara.Add("F_PurchaseLedger", dataReceived.F_PurchaseLedger, DbType.Decimal);
+                dbPara.Add("Narration", dataReceived.Narration, DbType.String);
+                dbPara.Add("ModeType", dataReceived.ModeType, DbType.Boolean);
                 dbPara.Add("TotalAmount", dataReceived.TotalAmount, DbType.Decimal);
-                dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
-                dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
+                dbPara.Add("CurrentBalance", dataReceived.CurrentBalance, DbType.Decimal);
+                dbPara.Add("LineTotal", dataReceived.LineTotal, DbType.Decimal);
+                dbPara.Add("DifferenceAmount", dataReceived.DifferenceAmount, DbType.Decimal);
+                dbPara.Add("UserID", dataReceived.UserID, DbType.Decimal);
                 dbPara.Add("JsonData", dataReceived.JsonData, DbType.String);
-                dbPara.Add("F_LedgerMaster_CGST", dataReceived.F_LedgerMaster_CGST, DbType.Decimal);
-                dbPara.Add("F_LedgerMaster_SGST", dataReceived.F_LedgerMaster_SGST, DbType.Decimal);
-                dbPara.Add("F_LedgerMaster_IGST", dataReceived.F_LedgerMaster_IGST, DbType.Decimal);
 
                 /****/
                 var data = mModel;

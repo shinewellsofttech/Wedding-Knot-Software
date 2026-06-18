@@ -79,6 +79,9 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("JsonData", dataReceived.JsonData, DbType.String);
                 dbPara.Add("DispatchDocNo", dataReceived.DispatchDocNo, DbType.String);
                 dbPara.Add("DispatchedThrough", dataReceived.DispatchedThrough, DbType.String);
+                dbPara.Add("F_LedgerMaster_CGST", dataReceived.F_LedgerMaster_CGST, DbType.Decimal);
+                dbPara.Add("F_LedgerMaster_SGST", dataReceived.F_LedgerMaster_SGST, DbType.Decimal);
+                dbPara.Add("F_LedgerMaster_IGST", dataReceived.F_LedgerMaster_IGST, DbType.Decimal);
 
                 /****/
                 var data = mModel;
