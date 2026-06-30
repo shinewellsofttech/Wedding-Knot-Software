@@ -75,6 +75,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("MobileNo", dataReceived.MobileNo, DbType.String);
                 dbPara.Add("EmailId", dataReceived.EmailId, DbType.String);
                 dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
+                dbPara.Add("F_GSTGroupMaster", dataReceived.F_GSTGroupMaster, DbType.Decimal);
 
 
                 /****/

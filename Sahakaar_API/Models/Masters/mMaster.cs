@@ -41,7 +41,7 @@ namespace Sahakaar_API.Models.Masters
         public string MobileNo { get; set; } = string.Empty;
         public string EmailId { get; set; } = string.Empty;
         public decimal UserId { get; set; } = 0;
-
+        public decimal F_GSTGroupMaster { get; set; } = 0;
     }
     public class mItemMainGroupMaster
     {
@@ -323,6 +323,9 @@ namespace Sahakaar_API.Models.Masters
         public string JsonData { get; set; } = string.Empty;
         public string DispatchDocNo { get; set; } = string.Empty;
         public string DispatchedThrough { get; set; } = string.Empty;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
     }
     public class mGetItemDetailByBarcode
     {
@@ -365,6 +368,9 @@ namespace Sahakaar_API.Models.Masters
         public string OtherChargesJson { get; set; } = string.Empty;
         public string DispatchDocNo { get; set; } = string.Empty;
         public string DispatchedThrough { get; set; } = string.Empty;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
 
     }
     public class mItemSchemeMaster
@@ -427,6 +433,9 @@ namespace Sahakaar_API.Models.Masters
         public decimal UserId { get; set; } = 0;
         public decimal F_CompanyMaster { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
     }
     public class mSalesReturn
     {
@@ -444,6 +453,9 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_CompanyMaster { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
         public string OtherChargesJson { get; set; } = string.Empty;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
 
     }
     public class mGetLedgerDetails
@@ -482,4 +494,82 @@ namespace Sahakaar_API.Models.Masters
         public Decimal UserId { get; set; }
 
     }
+    public class mRentManagement
+    {
+        public String EntryNo { get; set; } = null;
+        public DateTime? EntryDate { get; set; } = null;
+        public DateTime? TillDate { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public decimal F_LedgerMaster_Tax { get; set; } = 0;
+        public string Remarks { get; set; } = string.Empty;
+        public decimal TotalRentAmount { get; set; } = 0;
+        public decimal TotalSecurityDeposit { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
+        public decimal F_CompanyMaster { get; set; } = 0;
+        public decimal UserId { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
+        public string CustomerName { get; set; } = string.Empty;
+        public string MobileNo { get; set; } = string.Empty;
+    }
+    public class mRentReturn
+    {
+        public decimal F_RentManagementH { get; set; } = 0;
+        public String EntryNo { get; set; } = null;
+        public DateTime? EntryDate { get; set; } = null;
+        public DateTime? TillDate { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public decimal F_LedgerMaster_Tax { get; set; } = 0;
+        public string Remarks { get; set; } = string.Empty;
+        public decimal TotalRentAmount { get; set; } = 0;
+        public decimal TotalSecurityDeposit { get; set; } = 0;
+        public decimal TotalTax { get; set; } = 0;
+        public decimal F_CompanyMaster { get; set; } = 0;
+        public decimal UserId { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+        public decimal TotalCGST { get; set; } = 0;
+        public decimal TotalSGST { get; set; } = 0;
+        public decimal TotalIGST { get; set; } = 0;
+        public decimal F_LedgerMaster_CGST { get; set; } = 0;
+        public decimal F_LedgerMaster_SGST { get; set; } = 0;
+        public decimal F_LedgerMaster_IGST { get; set; } = 0;
+        public string CustomerName { get; set; } = string.Empty;
+        public string MobileNo { get; set; } = string.Empty;
+    }
+    public class mMoneyReceipt
+    {
+        public String ReceiptNo { get; set; } = null;
+        public DateTime? ReceiptDate { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public decimal F_SalesLedger { get; set; } = 0;
+        public string Narration { get; set; } = string.Empty;
+        public bool ModeType { get; set; } = false;
+        public decimal TotalAmount { get; set; } = 0;
+        public decimal CurrentBalance { get; set; } = 0;
+        public decimal LineTotal { get; set; } = 0;
+        public decimal DifferenceAmount { get; set; } = 0;
+        public decimal UserID { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+    }
+    public class mMoneyPayment
+    {
+        public String PaymentNo { get; set; } = null;
+        public DateTime? PaymentDate { get; set; } = null;
+        public decimal F_LedgerMaster { get; set; } = 0;
+        public decimal F_PurchaseLedger { get; set; } = 0;
+        public string Narration { get; set; } = string.Empty;
+        public bool ModeType { get; set; } = false;
+        public decimal TotalAmount { get; set; } = 0;
+        public decimal CurrentBalance { get; set; } = 0;
+        public decimal LineTotal { get; set; } = 0;
+        public decimal DifferenceAmount { get; set; } = 0;
+        public decimal UserID { get; set; } = 0;
+        public string JsonData { get; set; } = string.Empty;
+    }
+
 }
