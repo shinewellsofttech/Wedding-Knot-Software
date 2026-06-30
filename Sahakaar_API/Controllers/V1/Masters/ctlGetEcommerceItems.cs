@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -65,7 +65,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 {
                     dbPara.Add("Id", Id);
                 }
-                dbPara.Add("CategoryId", dataReceived.CategoryId, DbType.Decimal);                
+                dbPara.Add("CategoryId", dataReceived.CategoryId, DbType.String);                
                 dbPara.Add("SortOrder", dataReceived.SortOrder, DbType.String);
                 dbPara.Add("SearchKeyword", dataReceived.SearchKeyword, DbType.String);
 

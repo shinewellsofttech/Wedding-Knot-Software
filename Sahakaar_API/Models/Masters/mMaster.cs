@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -339,7 +339,7 @@ namespace Sahakaar_API.Models.Masters
     }
     public class mGetEcommerceItems
     {
-        public decimal CategoryId { get; set; } = 0;
+        public string CategoryId { get; set; } = string.Empty;
         public String SearchKeyword { get; set; } = string.Empty;
         public String SortOrder { get; set; } = string.Empty;
 
