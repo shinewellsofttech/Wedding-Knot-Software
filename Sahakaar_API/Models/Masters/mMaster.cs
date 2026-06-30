@@ -334,6 +334,13 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_GSTGroupMaster { get; set; } = 0;
 
     }
+    public class mGetEcommerceItems
+    {
+        public decimal CategoryId { get; set; } = 0;
+        public String SearchKeyword { get; set; } = string.Empty;
+        public String SortOrder { get; set; } = string.Empty;
+
+    }
     public class mFinancialYearMaster
     {
         public DateTime? FinancialYearFrom { get; set; } = null;

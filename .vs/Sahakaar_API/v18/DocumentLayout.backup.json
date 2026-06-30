@@ -1,0 +1,814 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\models\\masters\\mmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\models\\masters\\mmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlgetecommerceitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlgetecommerceitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlgetitemdetailbyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlgetitemdetailbyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\updateitemanditemdesignmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\updateitemanditemdesignmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlitemmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlitemmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlledgermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlledgermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\updateglobaloptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\updateglobaloptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlusermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlusermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctlunitmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctlunitmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\controllers\\v1\\masters\\ctladminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\controllers\\v1\\masters\\ctladminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.company\\PetrolPump\\Package\\app\\pages\\ReadingAndMoney\\PaymentSummary.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\services\\svccommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\services\\svccommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\models\\masters\\musermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\models\\masters\\musermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\sahakaar_api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\sahakaar_api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\models\\motp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\models\\motp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\lib\\clsfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\lib\\clsfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\security\\tpresetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\security\\tpresetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\security\\tploginoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\security\\tploginoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\security\\tplogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\security\\tplogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\migrations\\20200815171535_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\migrations\\20200815171535_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\services\\dappermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\services\\dappermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\authentication\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\authentication\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|d:\\kuljeet\\accounting\\wedding-knot-software\\sahakaar_api\\sahakaar_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{98825CAA-4CDC-470E-B0F7-328AA198A022}|Sahakaar_API\\Sahakaar_API.csproj|solutionrelative:sahakaar_api\\sahakaar_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemTypeMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlPurchaseMasterH.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlWarehouseMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlColorMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemGroupMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlVendorMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStatusMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterH.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterInOut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlSalesMasterH.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceTax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateTax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlAgentMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberMaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberDetailsReport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ctlGetEcommerceItems.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetEcommerceItems.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetEcommerceItems.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetEcommerceItems.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetEcommerceItems.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwEEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T07:12:40.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ctlGetItemDetailByReference.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetItemDetailByReference.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetItemDetailByReference.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetItemDetailByReference.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlGetItemDetailByReference.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T07:12:25.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateItemAndItemDesignMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\UpdateItemAndItemDesignMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\UpdateItemAndItemDesignMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\UpdateItemAndItemDesignMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\UpdateItemAndItemDesignMaster.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T05:41:25.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ctlPayment.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlPayment.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlPayment.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlPayment.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlPayment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:19.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\Masters\\mMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Models\\Masters\\mMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\Masters\\mMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Models\\Masters\\mMaster.cs",
+              "ViewState": "AgIAAEoBAAAAAAAAAAA8wFIBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ctlItemMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemMaster.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAIwDcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ctlItemTypeMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemTypeMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemTypeMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemTypeMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemTypeMaster.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA9wEUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ctlPurchaseMasterH.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlPurchaseMasterH.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlPurchaseMasterH.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlPurchaseMasterH.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlPurchaseMasterH.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAD4v1cAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ctlMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlMaster.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ctlLedgerMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlLedgerMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlLedgerMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlLedgerMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlLedgerMaster.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAawBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ctlWarehouseMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlWarehouseMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlWarehouseMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlWarehouseMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlWarehouseMaster.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowCEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ctlColorMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlColorMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlColorMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlColorMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlColorMaster.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ctlItemGroupMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemGroupMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemGroupMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemGroupMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlItemGroupMaster.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateGlobalOptions.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\UpdateGlobalOptions.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\UpdateGlobalOptions.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\UpdateGlobalOptions.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\UpdateGlobalOptions.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ctlVendorMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlVendorMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlVendorMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlVendorMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlVendorMaster.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ctlStatusMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStatusMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStatusMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStatusMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStatusMaster.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDUAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ctlStockMasterH.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterH.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterH.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterH.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterH.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ctlUnitMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlUnitMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlUnitMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlUnitMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlUnitMaster.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwDkAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ctlUserMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlUserMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlUserMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlUserMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlUserMaster.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwEgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ctlStockMasterInOut.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterInOut.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterInOut.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterInOut.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlStockMasterInOut.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDkAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ctlSalesMasterH.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlSalesMasterH.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlSalesMasterH.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlSalesMasterH.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlSalesMasterH.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAzwEQAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ctlInsertInvoiceTax.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceTax.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceTax.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceTax.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceTax.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAEwEsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ctlInsertInvoiceL.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceL.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceL.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceL.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertInvoiceL.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAA/wGkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ctlInsertEstimateTax.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateTax.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateTax.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateTax.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateTax.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwFAAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ctlAgentMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlAgentMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlAgentMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlAgentMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlAgentMaster.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ctlInsertEstimateL.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateL.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateL.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateL.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlInsertEstimateL.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAQwB4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PaymentSummary.js",
+              "DocumentMoniker": "D:\\.company\\PetrolPump\\Package\\app\\pages\\ReadingAndMoney\\PaymentSummary.js",
+              "RelativeDocumentMoniker": "..\\..\\..\\.company\\PetrolPump\\Package\\app\\pages\\ReadingAndMoney\\PaymentSummary.js",
+              "ToolTip": "D:\\.company\\PetrolPump\\Package\\app\\pages\\ReadingAndMoney\\PaymentSummary.js",
+              "RelativeToolTip": "..\\..\\..\\.company\\PetrolPump\\Package\\app\\pages\\ReadingAndMoney\\PaymentSummary.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-13T08:41:00.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\appsettings.json",
+              "RelativeDocumentMoniker": "Sahakaar_API\\appsettings.json",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\appsettings.json",
+              "RelativeToolTip": "Sahakaar_API\\appsettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-13T08:41:00.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "svcCommon.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Services\\svcCommon.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Services\\svcCommon.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Services\\svcCommon.cs",
+              "RelativeToolTip": "Sahakaar_API\\Services\\svcCommon.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAWwG4AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ctlAdminLogin.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlAdminLogin.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlAdminLogin.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlAdminLogin.cs",
+              "RelativeToolTip": "Sahakaar_API\\Controllers\\V1\\Masters\\ctlAdminLogin.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwBsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Startup.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Startup.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Startup.cs",
+              "RelativeToolTip": "Sahakaar_API\\Startup.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Sahakaar_API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-13T08:41:00.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ctlMemberMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberMaster.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberMaster.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberMaster.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAiwJoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "mUserMaster.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\Masters\\mUserMaster.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Models\\Masters\\mUserMaster.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\Masters\\mUserMaster.cs",
+              "RelativeToolTip": "Sahakaar_API\\Models\\Masters\\mUserMaster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Sahakaar_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAkBAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Sahakaar_API",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Sahakaar_API.csproj",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj",
+              "RelativeToolTip": "Sahakaar_API\\Sahakaar_API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-13T08:41:00.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\web.config",
+              "RelativeDocumentMoniker": "Sahakaar_API\\web.config",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\web.config",
+              "RelativeToolTip": "Sahakaar_API\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-13T08:41:00.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "tpLogin.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Security\\tpLogin.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Security\\tpLogin.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Security\\tpLogin.cs",
+              "RelativeToolTip": "Sahakaar_API\\Security\\tpLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Models\\RegisterModel.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "Sahakaar_API\\Models\\RegisterModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "tpLoginOptions.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Security\\tpLoginOptions.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Security\\tpLoginOptions.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Security\\tpLoginOptions.cs",
+              "RelativeToolTip": "Sahakaar_API\\Security\\tpLoginOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "tpResetPassword.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Security\\tpResetPassword.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Security\\tpResetPassword.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Security\\tpResetPassword.cs",
+              "RelativeToolTip": "Sahakaar_API\\Security\\tpResetPassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAACBjwA4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Models\\LoginModel.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\LoginModel.cs",
+              "RelativeToolTip": "Sahakaar_API\\Models\\LoginModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "mOTP.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\mOTP.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Models\\mOTP.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Models\\mOTP.cs",
+              "RelativeToolTip": "Sahakaar_API\\Models\\mOTP.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "clsFunctions.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Lib\\clsFunctions.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Lib\\clsFunctions.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Lib\\clsFunctions.cs",
+              "RelativeToolTip": "Sahakaar_API\\Lib\\clsFunctions.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20200815171535_initial.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Migrations\\20200815171535_initial.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Migrations\\20200815171535_initial.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Migrations\\20200815171535_initial.cs",
+              "RelativeToolTip": "Sahakaar_API\\Migrations\\20200815171535_initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Authentication\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Authentication\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Authentication\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Sahakaar_API\\Authentication\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Program.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Program.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Program.cs",
+              "RelativeToolTip": "Sahakaar_API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DapperManager.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Services\\DapperManager.cs",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Services\\DapperManager.cs",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Services\\DapperManager.cs",
+              "RelativeToolTip": "Sahakaar_API\\Services\\DapperManager.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAqwB4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ctlMemberDetailsReport.cs",
+              "DocumentMoniker": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberDetailsReport.cs",
+              "RelativeDocumentMoniker": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberDetailsReport.cs",
+              "ToolTip": "D:\\Kuljeet\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberDetailsReport.cs",
+              "RelativeToolTip": "..\\..\\InventoryNew\\API\\Sahakaar_API\\Controllers\\V1\\Masters\\ctlMemberDetailsReport.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAuwE8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:00.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Sahakaar_API.csproj",
+              "DocumentMoniker": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj",
+              "RelativeDocumentMoniker": "Sahakaar_API\\Sahakaar_API.csproj",
+              "ToolTip": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj",
+              "RelativeToolTip": "Sahakaar_API\\Sahakaar_API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-13T08:41:00.366Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

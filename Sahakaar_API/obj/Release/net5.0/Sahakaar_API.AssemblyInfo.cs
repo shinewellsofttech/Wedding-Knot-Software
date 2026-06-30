@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sahakaar_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec27695f12b08b8f94070639abe0943975c30f64")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sahakaar_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sahakaar_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

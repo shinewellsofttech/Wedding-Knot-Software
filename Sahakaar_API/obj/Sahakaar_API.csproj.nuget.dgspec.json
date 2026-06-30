@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rekha\\Projects\\Sahakaar and Shinewell\\Wedding\\API\\Sahakaar_API\\Sahakaar_API.csproj": {}
+    "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj": {}
   },
   "projects": {
-    "D:\\Rekha\\Projects\\Sahakaar and Shinewell\\Wedding\\API\\Sahakaar_API\\Sahakaar_API.csproj": {
+    "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rekha\\Projects\\Sahakaar and Shinewell\\Wedding\\API\\Sahakaar_API\\Sahakaar_API.csproj",
+        "projectUniqueName": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj",
         "projectName": "Sahakaar_API",
-        "projectPath": "D:\\Rekha\\Projects\\Sahakaar and Shinewell\\Wedding\\API\\Sahakaar_API\\Sahakaar_API.csproj",
-        "packagesPath": "C:\\Users\\Deepak\\.nuget\\packages\\",
-        "outputPath": "D:\\Rekha\\Projects\\Sahakaar and Shinewell\\Wedding\\API\\Sahakaar_API\\obj\\",
+        "projectPath": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\Sahakaar_API.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Kuljeet\\Accounting\\Wedding-Knot-Software\\Sahakaar_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Deepak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,11 +26,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.sitefinity.com/nuget": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
+            "framework": "net5.0",
             "targetAlias": "net5.0",
             "projectReferences": {}
           }
@@ -39,10 +40,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net5.0": {
+          "framework": "net5.0",
           "targetAlias": "net5.0",
           "dependencies": {
             "Dapper": {
@@ -116,7 +124,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -128,7 +137,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
