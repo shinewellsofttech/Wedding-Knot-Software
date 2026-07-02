@@ -13,9 +13,19 @@ namespace Sahakaar_API.Models.Masters
         [Required(ErrorMessage = "Password is required.")]
         public string Password { get; set; }
 
-        public string ContactEmail { get; set; }
+        public string ContactEmail { get; set; } = string.Empty;
         
-        public string ContactMobile { get; set; }
+        public string ContactMobile { get; set; } = string.Empty;
+
+        public string Address { get; set; } = string.Empty;
+
+        public decimal F_CityMaster { get; set; } = 0;
+
+        public decimal F_StateMaster { get; set; } = 0;
+
+        public string PinCode { get; set; } = string.Empty;
+
+        public decimal F_CompanyMaster { get; set; } = 1;
     }
 
     public class mEccomLogin
@@ -25,5 +35,14 @@ namespace Sahakaar_API.Models.Masters
 
         [Required(ErrorMessage = "Password is required.")]
         public string Password { get; set; }
+    }
+
+    public class mEccomOrder
+    {
+        public string Remarks { get; set; } = string.Empty;
+        public string DispatchedThrough { get; set; } = string.Empty;
+        public string DispatchDocNo { get; set; } = string.Empty;
+        public string OtherChargesJson { get; set; } = string.Empty;
+        public decimal F_CompanyMaster { get; set; } = 1;
     }
 }

@@ -34,6 +34,11 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("Password", dataReceived.Password, DbType.String);
                 dbPara.Add("ContactEmail", dataReceived.ContactEmail, DbType.String);
                 dbPara.Add("ContactMobile", dataReceived.ContactMobile, DbType.String);
+                dbPara.Add("Address", dataReceived.Address, DbType.String);
+                dbPara.Add("F_CityMaster", dataReceived.F_CityMaster, DbType.Decimal);
+                dbPara.Add("F_StateMaster", dataReceived.F_StateMaster, DbType.Decimal);
+                dbPara.Add("PinCode", dataReceived.PinCode, DbType.String);
+                dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
 
                 var response = await _svc.Login(dbPara: dbPara, sAddEdit_Procedure: "Eccom_Register");
                 if (response != null && response.Count > 0)
