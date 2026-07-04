@@ -44,5 +44,7 @@ namespace Sahakaar_API.Models.Masters
         public string DispatchDocNo { get; set; } = string.Empty;
         public string OtherChargesJson { get; set; } = string.Empty;
         public decimal F_CompanyMaster { get; set; } = 1;
+        public decimal F_ShippingAddressId { get; set; } = 0;
+        public decimal F_BillingAddressId { get; set; } = 0;
     }
 }

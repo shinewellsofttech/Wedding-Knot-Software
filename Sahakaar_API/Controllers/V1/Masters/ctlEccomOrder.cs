@@ -37,7 +37,9 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("DispatchDocNo", dataReceived.DispatchDocNo, DbType.String);
                 dbPara.Add("OtherChargesJson", dataReceived.OtherChargesJson, DbType.String);
                 dbPara.Add("F_CompanyMaster", dataReceived.F_CompanyMaster, DbType.Decimal);
-
+                dbPara.Add("F_ShippingAddressId", dataReceived.F_ShippingAddressId, DbType.Decimal);
+                dbPara.Add("F_BillingAddressId", dataReceived.F_BillingAddressId, DbType.Decimal);
+ 
                 var response = await _svc.Login(dbPara: dbPara, sAddEdit_Procedure: "CreateEccomOrder");
                 if (response != null && response.Count > 0)
                 {
