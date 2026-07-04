@@ -1583,7 +1583,6 @@ D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\bin\Release\ne
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\bin\Release\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\bin\Release\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.csprojAssemblyReference.cache
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.GeneratedMSBuildEditorConfig.editorconfig
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.AssemblyInfoInputs.cache
 D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.AssemblyInfo.cs
@@ -1766,3 +1765,4 @@ D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\stat
 D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\Sahakaar.CCEB8E21.Up2Date
 D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.genruntimeconfig.cache
 D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\ref\Sahakaar_API.dll
+D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.csprojAssemblyReference.cache

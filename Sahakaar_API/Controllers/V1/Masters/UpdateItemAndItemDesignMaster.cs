@@ -103,6 +103,28 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     {
                         await SaveFile(dataReceived.DesignPhoto5, "ItemPhoto5_", ItemDesignId, "DesignPhoto5", "ItemDesignMaster");
                     }
+                    //for image null reference
+                    if (dataReceived.DesignPhoto == null && dataReceived.FieldName == "DesignPhoto")
+                    {
+                        var imageUrl = await _svc.Update_ImageDataNew(dataReceived.TableName, ItemDesignId, "", "DesignPhoto");
+                    }
+                    if (dataReceived.DesignPhoto2 == null && dataReceived.FieldName == "DesignPhoto2")
+                    {
+                        var imageUrl = await _svc.Update_ImageDataNew(dataReceived.TableName, ItemDesignId, "", "DesignPhoto2");
+                    }
+                    if (dataReceived.DesignPhoto3 == null && dataReceived.FieldName == "DesignPhoto3")
+                    {
+                        var imageUrl = await _svc.Update_ImageDataNew(dataReceived.TableName, ItemDesignId, "", "DesignPhoto3");
+                    }
+                    if (dataReceived.DesignPhoto4 == null && dataReceived.FieldName == "DesignPhoto4")
+                    {
+                        var imageUrl = await _svc.Update_ImageDataNew(dataReceived.TableName, ItemDesignId, "", "DesignPhoto4");
+                    }
+                    if (dataReceived.DesignPhoto5 == null && dataReceived.FieldName == "DesignPhoto5")
+                    {
+                        var imageUrl = await _svc.Update_ImageDataNew(dataReceived.TableName, ItemDesignId, "", "DesignPhoto5");
+                    }
+                    //rcp
                 }
 
                 /****/
