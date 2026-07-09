@@ -571,5 +571,12 @@ namespace Sahakaar_API.Models.Masters
         public decimal UserID { get; set; } = 0;
         public string JsonData { get; set; } = string.Empty;
     }
-
+    public class mGetStockDetail
+    {
+        public DateTime? FromDate { get; set; } = null;
+        public DateTime? ToDate { get; set; } = null;
+        public decimal F_ItemMaster { get; set; } = 0;
+        public decimal F_GSTGroupMaster { get; set; } = 0;
+        public decimal F_CategoryMaste { get; set; } = 0;
+    }
 }

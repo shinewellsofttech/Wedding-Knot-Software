@@ -1765,4 +1765,3 @@ D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\stat
 D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\Sahakaar.CCEB8E21.Up2Date
 D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.genruntimeconfig.cache
 D:\Kuljeet\Accounting\Wedding-Knot-Software\Sahakaar_API\obj\Release\net5.0\ref\Sahakaar_API.dll
-D:\Rekha\Projects\Sahakaar and Shinewell\Wedding\API\Sahakaar_API\obj\Release\net5.0\Sahakaar_API.csprojAssemblyReference.cache
