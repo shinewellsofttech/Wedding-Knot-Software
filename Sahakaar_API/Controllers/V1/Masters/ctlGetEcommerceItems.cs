@@ -68,6 +68,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("CategoryId", dataReceived.CategoryId, DbType.String);                
                 dbPara.Add("SortOrder", dataReceived.SortOrder, DbType.String);
                 dbPara.Add("SearchKeyword", dataReceived.SearchKeyword, DbType.String);
+                dbPara.Add("F_UserMaster", Convert.ToDecimal(UserId), DbType.Decimal);
 
                 /****/
                 var data = mModel;
