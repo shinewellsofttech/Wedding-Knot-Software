@@ -21,6 +21,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
             this._svc = svc;
         }
 
+        // POST: api/V1/EccomRegister  — Register a new ecommerce user
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -61,5 +62,33 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
             }
         }
+
+        // GET: api/V1/EccomRegister/{Id}  — Get ecommerce user profile by UserId
+        [HttpGet]
+        [Route("{Id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> GetEccomUser(decimal Id)
+        {
+            try
+            {
+                var dbPara = new DynamicParameters();
+                dbPara.Add("Id", Id, DbType.Decimal);
+
+                var response = await _svc.Login(dbPara: dbPara, sAddEdit_Procedure: "GetUserDetail");
+                if (response != null && response.Count > 0)
+                {
+                    return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "User retrieved successfully", Data = new { user = response[0] } });
+                }
+
+                return Ok(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = "User not found" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
+            }
+        }
     }
 }
+
