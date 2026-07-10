@@ -46,5 +46,6 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_CompanyMaster { get; set; } = 1;
         public decimal F_ShippingAddressId { get; set; } = 0;
         public decimal F_BillingAddressId { get; set; } = 0;
+        public string ItemsJson { get; set; } = string.Empty;
     }
 }
