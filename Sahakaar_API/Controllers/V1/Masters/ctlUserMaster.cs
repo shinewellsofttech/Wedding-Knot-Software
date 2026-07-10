@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -102,6 +102,32 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
             }
         }
-        
+
+        // GET: api/V1/UserMaster/{UserId}/{UserToken}/{Id}
+        [HttpGet]
+        [Route("{UserId}/{UserToken}/{Id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> GetUserById(string UserId, string UserToken, decimal Id)
+        {
+            try
+            {
+                var dbPara = new DynamicParameters();
+                dbPara.Add("Id", Id, DbType.Decimal);
+
+                var response = await _svc.Login(dbPara: dbPara, sAddEdit_Procedure: "GetUserDetail");
+                if (response != null && response.Count > 0)
+                {
+                    return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "User retrieved successfully", Data = new { user = response[0] } });
+                }
+
+                return Ok(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = "User not found" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
+            }
+        }
     }
 }
