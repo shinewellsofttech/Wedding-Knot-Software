@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -51,11 +52,122 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     }
                     else
                     {
-                        return Ok(new Response { Success = false, Status = StatusCodes.Status200OK, Message = res.Message });
+                        return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = res.Message });
                     }
                 }
 
-                return Ok(new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = "Failed to place order" });
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = "Failed to place order" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
+            }
+        }
+        // GET: api/V1/EccomOrder/AdminGetOrders/{UserId}/{UserToken}
+        [HttpGet]
+        [Route("AdminGetOrders/{UserId}/{UserToken}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> AdminGetOrders(string UserId, string UserToken, [FromQuery] decimal? targetUserId = null)
+        {
+            try
+            {
+                var dbPara = new DynamicParameters();
+                dbPara.Add("F_UserMaster", Convert.ToDecimal(UserId), DbType.Decimal);
+                if (targetUserId.HasValue && targetUserId.Value > 0)
+                {
+                    dbPara.Add("TargetUserId", targetUserId.Value, DbType.Decimal);
+                }
+                else
+                {
+                    dbPara.Add("TargetUserId", 0, DbType.Decimal);
+                }
+                
+                var response = await _svc.Login(dbPara: dbPara, sAddEdit_Procedure: "Admin_GetEccomOrders");
+                if (response != null)
+                {
+                    var ordersList = new List<dynamic>();
+                    foreach (var item in response)
+                    {
+                        var row = item as IDictionary<string, object>;
+                        if (row != null && row.ContainsKey("ItemsJson") && row["ItemsJson"] != null)
+                        {
+                            try
+                            {
+                                row["Items"] = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(row["ItemsJson"].ToString());
+                                row.Remove("ItemsJson");
+                            }
+                            catch 
+                            {
+                                row["Items"] = new List<Dictionary<string, object>>();
+                            }
+                        }
+                        else if (row != null)
+                        {
+                            row["Items"] = new List<Dictionary<string, object>>();
+                        }
+                        ordersList.Add(item);
+                    }
+                    return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Orders retrieved successfully", Data = new { Orders = ordersList } });
+                }
+
+                return Ok(new Response { Success = false, Status = StatusCodes.Status200OK, Message = "No orders found" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
+            }
+        }
+
+        // POST: api/V1/EccomOrder/UpdateStatus/{UserId}/{UserToken}
+        [HttpPost]
+        [Route("UpdateStatus/{UserId}/{UserToken}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> UpdateStatus(string UserId, string UserToken, [FromForm] mUpdateOrderStatus dataReceived)
+        {
+            try
+            {
+                decimal statusId = dataReceived.F_StatusMaster;
+                if (statusId == 0 && !string.IsNullOrEmpty(dataReceived.Status))
+                {
+                    if (dataReceived.Status.Equals("Approved", StringComparison.OrdinalIgnoreCase))
+                        statusId = 2;
+                    else if (dataReceived.Status.Equals("Rejected", StringComparison.OrdinalIgnoreCase))
+                        statusId = 3;
+                    else if (dataReceived.Status.Equals("Packed", StringComparison.OrdinalIgnoreCase))
+                        statusId = 4;
+                    else if (dataReceived.Status.Equals("Shipped", StringComparison.OrdinalIgnoreCase))
+                        statusId = 5;
+                    else if (dataReceived.Status.Equals("Out for Delivery", StringComparison.OrdinalIgnoreCase))
+                        statusId = 6;
+                    else if (dataReceived.Status.Equals("Delivered", StringComparison.OrdinalIgnoreCase))
+                        statusId = 7;
+                    else
+                        statusId = 1; // Pending
+                }
+
+                var dbPara = new DynamicParameters();
+                dbPara.Add("F_UserMaster", Convert.ToDecimal(UserId), DbType.Decimal);
+                dbPara.Add("OrderId", dataReceived.OrderId, DbType.Decimal);
+                dbPara.Add("F_StatusMaster", statusId, DbType.Decimal);
+                dbPara.Add("Remarks", dataReceived.Remarks, DbType.String);
+
+                var response = await _svc.Login(dbPara: dbPara, sAddEdit_Procedure: "Admin_UpdateOrderStatus");
+                if (response != null && response.Count > 0)
+                {
+                    dynamic res = response[0];
+                    if (res.Success == 1)
+                    {
+                        return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = res.Message });
+                    }
+                    else
+                    {
+                        return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = res.Message });
+                    }
+                }
+
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = "Failed to update order status" });
             }
             catch (Exception ex)
             {

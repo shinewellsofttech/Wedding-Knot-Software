@@ -1,0 +1,23 @@
+# Visual Studio
+.vs/
+[Db]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vsidx
+DesignTimeBuild/
+CopilotIndices/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+
+# PowerShell scripts generated / run by agent
+check.ps1
+inspect_getlist.ps1
+inspect_getlist_start.ps1

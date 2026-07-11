@@ -8,7 +8,8 @@ CREATE PROCEDURE [dbo].[CreateEccomOrder]
     @OtherChargesJson NVARCHAR(MAX) = '',
     @F_CompanyMaster NUMERIC(18,0) = 1,
     @F_ShippingAddressId NUMERIC(18,0) = 0,
-    @F_BillingAddressId NUMERIC(18,0) = 0
+    @F_BillingAddressId NUMERIC(18,0) = 0,
+    @ItemsJson NVARCHAR(MAX) = ''
 )
 AS
 BEGIN
@@ -192,11 +193,7 @@ BEGIN
         DECLARE @F_LedgerMaster_SGST NUMERIC(18,0) = 19;
         DECLARE @F_LedgerMaster_IGST NUMERIC(18,0) = 17;
 
-        -- Declare table variable to capture SalesEntryId output from AddEdit_SalesEntry
-        DECLARE @OutputTable TABLE (SalesEntryId NUMERIC(18,0));
-
         -- Call existing AddEdit_SalesEntry
-        INSERT INTO @OutputTable (SalesEntryId)
         EXEC [dbo].[AddEdit_SalesEntry]
             @Id = 0,
             @EntryNo = @EntryNo,
@@ -215,9 +212,10 @@ BEGIN
             @DispatchedThrough = @DispatchedThrough,
             @F_LedgerMaster_CGST = @F_LedgerMaster_CGST,
             @F_LedgerMaster_SGST = @F_LedgerMaster_SGST,
-            @F_LedgerMaster_IGST = @F_LedgerMaster_IGST;
+            @F_LedgerMaster_IGST = @F_LedgerMaster_IGST,
+            @SuppressSelect = 1;
 
-        DECLARE @SalesEntryId NUMERIC(18,0) = (SELECT TOP 1 SalesEntryId FROM @OutputTable);
+        DECLARE @SalesEntryId NUMERIC(18,0) = (SELECT TOP 1 Id FROM SalesEntryH WHERE EntryNo = @EntryNo);
 
         -- Clear User's Cart
         DELETE FROM Cart WHERE F_UserMaster = @F_UserMaster;

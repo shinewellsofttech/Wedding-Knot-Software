@@ -10,8 +10,7 @@ namespace Sahakaar_API.Models.Masters
         [Required(ErrorMessage = "Username is required.")]
         public string UserName { get; set; }
 
-        [Required(ErrorMessage = "Password is required.")]
-        public string Password { get; set; }
+        public string Password { get; set; } = string.Empty;
 
         public string ContactEmail { get; set; } = string.Empty;
         
@@ -48,4 +47,13 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_BillingAddressId { get; set; } = 0;
         public string ItemsJson { get; set; } = string.Empty;
     }
+
+    public class mUpdateOrderStatus
+    {
+        public decimal OrderId { get; set; }
+        public string Status { get; set; } = string.Empty;
+        public decimal F_StatusMaster { get; set; }
+        public string Remarks { get; set; } = string.Empty;
+    }
 }
+
