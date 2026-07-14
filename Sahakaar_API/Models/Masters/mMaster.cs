@@ -579,4 +579,16 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_GSTGroupMaster { get; set; } = 0;
         public decimal F_CategoryMaste { get; set; } = 0;
     }
+    public class mGetDashboardData
+    {
+        public DateTime? FromDate { get; set; } = null;
+        public DateTime? ToDate { get; set; } = null;
+    }
+    public class mGetCashBookReport
+    {
+        public DateTime? FromDate { get; set; } = null;
+        public DateTime? ToDate { get; set; } = null;
+        public decimal CashLedgerId { get; set; } = 0;
+    }
+    
 }
