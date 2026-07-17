@@ -43,6 +43,16 @@ BEGIN
             LastUpdateOn = GETDATE()
         WHERE F_SalesEntryH = @OrderId;
 
+        -- Clear User's Cart if the order is approved (status = 2)
+        IF @F_StatusMaster = 2
+        BEGIN
+            DECLARE @OrderUserId NUMERIC(18,0) = (SELECT UserId FROM SalesEntryH WHERE Id = @OrderId);
+            IF @OrderUserId IS NOT NULL AND @OrderUserId > 0
+            BEGIN
+                DELETE FROM Cart WHERE F_UserMaster = @OrderUserId;
+            END
+        END
+
         COMMIT TRAN;
 
         SELECT 1 AS Success, 'Order status updated successfully' AS Message;
