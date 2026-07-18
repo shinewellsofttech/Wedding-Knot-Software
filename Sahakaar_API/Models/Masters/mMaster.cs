@@ -590,5 +590,27 @@ namespace Sahakaar_API.Models.Masters
         public DateTime? ToDate { get; set; } = null;
         public decimal CashLedgerId { get; set; } = 0;
     }
-    
+    public class mGetTrialBalance
+    {
+        public DateTime? FromDate { get; set; } = null;
+        public DateTime? ToDate { get; set; } = null;
+        public bool IsSummrized { get; set; } = false;
+        public bool IsShowOnlyOB { get; set; } = false;
+        public bool IsBrief { get; set; } = false;
+        public decimal UserId { get; set; } = 0;
+    }
+    public class mGetBalanceSheetReport
+    {
+        public DateTime? DateAsOn { get; set; } = null;
+        public decimal UserId { get; set; } = 0;
+        public decimal IsDetailed { get; set; } = 0;
+
+    }
+    public class mGetTradingAndPL_Report
+    {
+        public DateTime? FromDate { get; set; } = null;
+        public DateTime? ToDate { get; set; } = null;
+        public decimal UserId { get; set; } = 0;
+        public decimal IsDetailed { get; set; } = 0;
+    }
 }
