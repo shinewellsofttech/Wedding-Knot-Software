@@ -7,6 +7,15 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
+    -- If the calling user is a customer (UserType = 4), restrict their search to only their own orders
+    DECLARE @UserType NUMERIC(18,0) = 0;
+    SELECT TOP 1 @UserType = F_UserType FROM UserMaster WHERE Id = @F_UserMaster;
+
+    IF @UserType = 4
+    BEGIN
+        SET @TargetUserId = @F_UserMaster;
+    END
+
     IF @TargetUserId > 0
     BEGIN
         SELECT 

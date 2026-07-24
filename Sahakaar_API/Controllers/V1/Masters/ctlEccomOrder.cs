@@ -63,25 +63,22 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
             }
         }
-        // GET: api/V1/EccomOrder/AdminGetOrders/{UserId}/{UserToken}
-        [HttpGet]
+
+
+        // POST: api/V1/EccomOrder/AdminGetOrders/{UserId}/{UserToken}
+        [HttpPost]
         [Route("AdminGetOrders/{UserId}/{UserToken}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> AdminGetOrders(string UserId, string UserToken, [FromQuery] decimal? targetUserId = null)
+        public async Task<IActionResult> AdminGetOrdersPost(string UserId, string UserToken, [FromForm] mAdminGetOrdersRequest dataReceived)
         {
             try
             {
                 var dbPara = new DynamicParameters();
                 dbPara.Add("F_UserMaster", Convert.ToDecimal(UserId), DbType.Decimal);
-                if (targetUserId.HasValue && targetUserId.Value > 0)
-                {
-                    dbPara.Add("TargetUserId", targetUserId.Value, DbType.Decimal);
-                }
-                else
-                {
-                    dbPara.Add("TargetUserId", 0, DbType.Decimal);
-                }
+                
+                decimal targetUserId = dataReceived?.UserId ?? 0;
+                dbPara.Add("TargetUserId", targetUserId, DbType.Decimal);
                 
                 var response = await _svc.Login(dbPara: dbPara, sAddEdit_Procedure: "Admin_GetEccomOrders");
                 if (response != null)

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -210,7 +210,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Add(string UserId, string UserToken, string TableName, [FromBody] mMaster dataReceived)
+        public async Task<IActionResult> Add(string UserId, string UserToken, string TableName, [FromForm] mMaster dataReceived)
         {
             return await Add_Edit(UserId, UserToken, TableName, Id: 0, dataReceived: dataReceived);
         }
@@ -220,7 +220,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Update(string UserId, string UserToken, string TableName, [FromBody] mMaster dataReceived, decimal Id)
+        public async Task<IActionResult> Update(string UserId, string UserToken, string TableName, [FromForm] mMaster dataReceived, decimal Id)
         {
             return await Add_Edit(UserId, UserToken, TableName, Id: Id, dataReceived: dataReceived);
         }
@@ -286,11 +286,25 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 {
                     dbPara.Add("Id", Id);
                 }
-                dbPara.Add("TableName", sTableName, DbType.String);
-                dbPara.Add("Name", dataReceived.Name, DbType.String);
-                /****/
+
                 var data = mModel;
-                var response = await _svc.Insert_Update(dbPara: dbPara);
+                decimal response = 0;
+                if (sTableName == "BarcodeTemplateMaster")
+                {
+                    if (decimal.TryParse(UserId, out decimal uId))
+                    {
+                        dbPara.Add("UserId", uId, DbType.Decimal);
+                    }
+                    dbPara.Add("Name", dataReceived.Name, DbType.String);
+                    response = await _svc.Insert_Update(dbPara: dbPara, sAddEdit_Procedure: "AddEdit_BarcodeTemplateMaster");
+                }
+                else
+                {
+                    dbPara.Add("TableName", sTableName, DbType.String);
+                    dbPara.Add("Name", dataReceived.Name, DbType.String);
+                    response = await _svc.Insert_Update(dbPara: dbPara);
+                }
+
                 if (response > 0)
                 {
                     data.Id = response;

@@ -195,11 +195,20 @@ BEGIN
 		     ,ISNULL(IM.ShortDescription,'') AS ShortDescription
                                                                                                                                                                                                    
 	   ,ISNULL(IM.FullDescription,'') AS FullDescription
-                                                                                                                                                                                                        
-	  
-                                                                                                                                                                                                                                                          
+	       ,ISNULL((
+	            SELECT SUM(V.AvailableQty)
+	            FROM (
+	                SELECT 
+	                    ISNULL(IDM.OpeningStock,0)
+	                    + ISNULL((SELECT SUM(Qty) FROM PurchaseEntryL WHERE F_ItemDesignMaster = IDM.Id), 0)
+	                    + ISNULL((SELECT SUM(Qty) FROM SalesReturnL WHERE F_ItemDesignMaster = IDM.Id), 0)
+	                    - ISNULL((SELECT SUM(Qty) FROM SalesEntryL WHERE F_ItemDesignMaster = IDM.Id), 0)
+	                    - ISNULL((SELECT SUM(Qty) FROM PurchaseReturnL WHERE F_ItemDesignMaster = IDM.Id), 0) AS AvailableQty
+	                FROM ItemDesignMaster IDM
+	                WHERE IDM.F_ItemMaster = IM.Id
+	            ) V
+	       ),0) AS AvailableQty
 	       ,(
-                                                                                                                                                                                                                                                   
 	           SELECT
                                                                                                                                                                                                                                            
 	                IDM.Id

@@ -30,6 +30,20 @@ BEGIN
        ,ISNULL(IM.ShortDescription,'') AS ShortDescription
        ,ISNULL(IM.FullDescription,'') AS FullDescription
        ,@F_UserMaster AS PassedUserMaster
+       ,ISNULL((
+            SELECT SUM(V.AvailableQty)
+            FROM (
+                SELECT 
+                    ISNULL(IDM.OpeningStock,0)
+                    + ISNULL((SELECT SUM(Qty) FROM PurchaseEntryL WHERE F_ItemDesignMaster = IDM.Id), 0)
+                    + ISNULL((SELECT SUM(Qty) FROM SalesReturnL WHERE F_ItemDesignMaster = IDM.Id), 0)
+                    - ISNULL((SELECT SUM(Qty) FROM SalesEntryL WHERE F_ItemDesignMaster = IDM.Id), 0)
+                    - ISNULL((SELECT SUM(Qty) FROM PurchaseReturnL WHERE F_ItemDesignMaster = IDM.Id), 0) AS AvailableQty
+                FROM ItemDesignMaster IDM
+                WHERE IDM.F_ItemMaster = IM.Id
+                  AND ISNULL(IDM.IsEcom, 0) = 1
+            ) V
+       ),0) AS AvailableQty
        ,CASE WHEN EXISTS (
             SELECT 1 FROM Wishlist W
             INNER JOIN ItemDesignMaster IDM_W ON W.F_ItemDesignMaster = IDM_W.Id

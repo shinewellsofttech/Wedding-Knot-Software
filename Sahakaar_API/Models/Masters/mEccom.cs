@@ -55,5 +55,10 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_StatusMaster { get; set; }
         public string Remarks { get; set; } = string.Empty;
     }
+
+    public class mAdminGetOrdersRequest                                                                                                                         
+    {
+        public decimal UserId { get; set; } = 0;
+    }
 }
 
