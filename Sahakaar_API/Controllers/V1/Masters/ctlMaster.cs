@@ -245,6 +245,16 @@ namespace Sahakaar_API.Controllers.V1.Masters
 
                     return NotFound(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = "Not Found" });
                 }
+                else if (TableName == "BarcodeTemplateMaster")
+                {
+                    var response = await _svc.Delete(Id, TableName);
+                    if (response > 0 || response == -1)
+                    {
+                        return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record deleted.", Data = new { response } });
+                    }
+
+                    return NotFound(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = "Not Found" });
+                }
                 else
                 {
                     var resp = await _svc.SearchReferenceBeforeDelete(TableName, Id);
@@ -252,7 +262,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     {
                         //var data = mModel;
                         var response = await _svc.Delete(Id, TableName);
-                        if (response > 0)
+                        if (response > 0 || response == -1)
                         {
                             //data.Id = response;
                             return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record deleted.", Data = new { response } });
