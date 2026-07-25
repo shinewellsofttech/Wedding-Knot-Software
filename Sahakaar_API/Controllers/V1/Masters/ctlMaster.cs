@@ -245,13 +245,6 @@ namespace Sahakaar_API.Controllers.V1.Masters
 
                     return NotFound(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = "Not Found" });
                 }
-                else if (TableName == "BarcodeTemplateMaster")
-                {
-                    var dbPara = new DynamicParameters();
-                    dbPara.Add("Id", Id, DbType.Decimal);
-                    var response = _svc._dapperManager.Execute("DELETE FROM BarcodeTemplateMaster WHERE Id = @Id", dbPara, CommandType.Text);
-                    return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record deleted.", Data = new { response } });
-                }
                 else
                 {
                     var resp = await _svc.SearchReferenceBeforeDelete(TableName, Id);
@@ -259,6 +252,13 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     {
                         //var data = mModel;
                         var response = await _svc.Delete(Id, TableName);
+                        if ((response == 0 || response == -1) && TableName == "BarcodeTemplateMaster")
+                        {
+                            var dbPara = new DynamicParameters();
+                            dbPara.Add("Id", Id, DbType.Decimal);
+                            response = _svc._dapperManager.Execute("DELETE FROM BarcodeTemplateMaster WHERE Id = @Id", dbPara, CommandType.Text);
+                        }
+
                         if (response > 0 || response == -1)
                         {
                             //data.Id = response;
