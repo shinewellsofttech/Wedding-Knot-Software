@@ -247,26 +247,27 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 }
                 else if (TableName == "BarcodeTemplateMaster")
                 {
-                    var resp = await _svc.SearchReferenceBeforeDelete(TableName, Id);
-                    if (resp == 1)
+                    try
                     {
                         var dbPara = new DynamicParameters();
                         dbPara.Add("Id", Id, DbType.Decimal);
-                        var response = _svc._dapperManager.Execute("DELETE FROM BarcodeTemplateMaster WHERE Id = @Id", dbPara, CommandType.Text);
-                        if (response > 0 || response == -1)
+
+                        int affectedRows = _svc._dapperManager.Execute("DELETE FROM BarcodeTemplateMaster WHERE Id = @Id", dbPara, CommandType.Text);
+                        if (affectedRows <= 0)
                         {
-                            return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record deleted.", Data = new { response } });
+                            affectedRows = _svc._dapperManager.Execute($"DELETE FROM BarcodeTemplateMaster WHERE Id = {Id}", null, CommandType.Text);
                         }
 
-                        return NotFound(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = "Not Found" });
+                        if (affectedRows > 0)
+                        {
+                            return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = "Record deleted.", Data = new { response = affectedRows } });
+                        }
+
+                        return NotFound(new Response { Success = false, Status = StatusCodes.Status404NotFound, Message = $"Record with Id {Id} not found in BarcodeTemplateMaster." });
                     }
-                    else if (resp == 2)
+                    catch (Exception ex)
                     {
-                        return Conflict(new Response { Success = false, Status = StatusCodes.Status408RequestTimeout, Message = "Deleting not allowed!!!" });
-                    }
-                    else
-                    {
-                        return Conflict(new Response { Success = false, Status = StatusCodes.Status409Conflict, Message = "Reference exists !!!" });
+                        return StatusCode(StatusCodes.Status500InternalServerError, new Response { Success = false, Status = StatusCodes.Status500InternalServerError, Message = ex.Message });
                     }
                 }
                 else
