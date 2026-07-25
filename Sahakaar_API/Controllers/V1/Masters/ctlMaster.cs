@@ -252,13 +252,6 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     {
                         //var data = mModel;
                         var response = await _svc.Delete(Id, TableName);
-                        if ((response == 0 || response == -1) && TableName == "BarcodeTemplateMaster")
-                        {
-                            var dbPara = new DynamicParameters();
-                            dbPara.Add("Id", Id, DbType.Decimal);
-                            response = _svc._dapperManager.Execute("DELETE FROM BarcodeTemplateMaster WHERE Id = @Id", dbPara, CommandType.Text);
-                        }
-
                         if (response > 0 || response == -1)
                         {
                             //data.Id = response;
