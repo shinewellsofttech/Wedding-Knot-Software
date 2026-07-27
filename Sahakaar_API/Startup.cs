@@ -24,6 +24,8 @@ using Sahakaar_API.Security;
 using System.IO;
 using Microsoft.Extensions.FileProviders;
 
+using Sahakaar_API.Hubs;
+
 namespace Sahakaar_API
 {
     public class Startup
@@ -39,13 +41,16 @@ namespace Sahakaar_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //Allow Cors
+            services.AddSignalR();
+
+            //Allow Cors with SignalR credentials
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsApi",
-                            builder => builder.WithOrigins("*")
-                        .AllowAnyHeader()
-                        .AllowAnyMethod());
+                    builder => builder.SetIsOriginAllowed(_ => true)
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod()
+                                      .AllowCredentials());
             });
             //
             //For Entitiy Framework
@@ -149,6 +154,7 @@ namespace Sahakaar_API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<OrderHub>("/hubs/orderHub");
             });
 
             // Allow image folder access

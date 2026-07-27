@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Dapper;
+using Microsoft.AspNetCore.SignalR;
+using Sahakaar_API.Hubs;
 using Sahakaar_API.Models;
 using Sahakaar_API.Models.Masters;
 using Sahakaar_API.Services;
@@ -16,10 +18,12 @@ namespace Sahakaar_API.Controllers.V1.Masters
     public class ctlEccomOrder : ControllerBase
     {
         private readonly svcCommon _svc;
+        private readonly IHubContext<OrderHub> _hubContext;
 
-        public ctlEccomOrder(svcCommon svc)
+        public ctlEccomOrder(svcCommon svc, IHubContext<OrderHub> hubContext)
         {
             this._svc = svc;
+            this._hubContext = hubContext;
         }
 
         // POST: api/V1/EccomOrder/{UserId}/{UserToken}
@@ -48,6 +52,19 @@ namespace Sahakaar_API.Controllers.V1.Masters
                     dynamic res = response[0];
                     if (res.Success == 1)
                     {
+                        try
+                        {
+                            await _hubContext.Clients.All.SendAsync("ReceiveNewOrder", new
+                            {
+                                salesEntryId = res.SalesEntryId,
+                                message = res.Message
+                            });
+                        }
+                        catch
+                        {
+                            // Ignore SignalR broadcast error so order placement still succeeds
+                        }
+
                         return Ok(new Response { Success = true, Status = StatusCodes.Status200OK, Message = res.Message, Data = new { SalesEntryId = res.SalesEntryId } });
                     }
                     else
