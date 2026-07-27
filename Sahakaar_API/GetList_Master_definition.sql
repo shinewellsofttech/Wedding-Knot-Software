@@ -104,9 +104,10 @@ BEGIN
 		   ,ISNULL(IM.F_GSTGroupMaster,0) AS F_GSTGroupMaster
 		   ,ISNULL(IM.F_UnitMaster,0) AS F_UnitMaster
 		   ,ISNULL(IM.F_MaterialMaster,0) AS F_MaterialMaster
-		   ,ISNULL(IM.UnitConversion,0) AS UnitConversion
 		     ,ISNULL(IM.ShortDescription,'') AS ShortDescription
 	   ,ISNULL(IM.FullDescription,'') AS FullDescription
+	   ,CASE WHEN ISNULL(IM.CoverImage,'')='' THEN '' ELSE 'https://accountingwkr.shinewellsofttech.co.in/ItemImages/' + IM.CoverImage END AS CoverImage
+	   ,CASE WHEN ISNULL(IM.CoverImage,'')='' THEN '' ELSE 'https://accountingwkr.shinewellsofttech.co.in/ItemImages/Thumbnails_300/' + IM.CoverImage END AS CoverImage_Thumb
 	       ,ISNULL((
 	            SELECT SUM(V.AvailableQty)
 	            FROM (
@@ -240,6 +241,7 @@ BEGIN
 						,TBL.F_UnitMaster
 						,TBL.UnitConversion
 						,TBL.F_MaterialMaster
+						,TBL.CoverImage
 						'
 		SET @ORDERBY = 'ORDER BY TBL.ItemName'                                                                                                                                    
 	END 

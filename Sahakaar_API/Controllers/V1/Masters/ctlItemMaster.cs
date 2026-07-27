@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -168,6 +168,13 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 if (response > 0)
                 {
                     data.Id = response;
+
+                    // COVER IMAGE
+                    if (dataReceived?.CoverImage?.ImageFile != null)
+                    {
+                        await SaveImage(dataReceived.CoverImage, "ItemCover_", response, "CoverImage", "ItemMaster");
+                    }
+
                     DataTable dtDesign = ds.Tables[1];
 
                     for (int i = 0; i < dataReceived.DesignDetails.Count; i++)
@@ -238,7 +245,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 );
             }
         }
-        private async Task SaveImage(mImageData ImageDetail, string Prefix, decimal Id, string sFieldName)
+        private async Task SaveImage(mImageData ImageDetail, string Prefix, decimal Id, string sFieldName, string sTableName = "ItemDesignMaster")
         {
             /** Image Uploading **/
             if (ImageDetail.ImageFile != null)
@@ -265,7 +272,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                         
                         //Updating to database
                         ImageDetail.ImageFileName = sFileName;
-                        var ImageUrl = await _svc.Update_ImageData("ItemDesignMaster", Id, ImageDetail, sFieldName);
+                        var ImageUrl = await _svc.Update_ImageData(sTableName, Id, ImageDetail, sFieldName);
 
                         if (ImageUrl != "")
                         {

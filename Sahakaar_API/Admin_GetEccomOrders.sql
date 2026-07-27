@@ -72,7 +72,8 @@ BEGIN
                     IDM.EcomPrice,
                     -- Details from ItemMaster
                     IM.ShortDescription,
-                    IM.FullDescription
+                    IM.FullDescription,
+                    CASE WHEN ISNULL(IM.CoverImage,'')='' THEN '' ELSE 'https://accountingwkr.shinewellsofttech.co.in/ItemImages/' + IM.CoverImage END AS CoverImage
                 FROM SalesEntryL L
                 LEFT JOIN ItemDesignMaster IDM ON L.F_ItemDesignMaster = IDM.Id
                 LEFT JOIN ItemMaster IM ON L.F_ItemMaster = IM.Id
@@ -141,7 +142,8 @@ BEGIN
                     IDM.EcomPrice,
                     -- Details from ItemMaster
                     IM.ShortDescription,
-                    IM.FullDescription
+                    IM.FullDescription,
+                    CASE WHEN ISNULL(IM.CoverImage,'')='' THEN '' ELSE 'https://accountingwkr.shinewellsofttech.co.in/ItemImages/' + IM.CoverImage END AS CoverImage
                 FROM SalesEntryL L
                 LEFT JOIN ItemDesignMaster IDM ON L.F_ItemDesignMaster = IDM.Id
                 LEFT JOIN ItemMaster IM ON L.F_ItemMaster = IM.Id

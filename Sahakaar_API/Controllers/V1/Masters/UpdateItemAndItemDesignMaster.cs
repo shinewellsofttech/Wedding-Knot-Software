@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -125,6 +125,18 @@ namespace Sahakaar_API.Controllers.V1.Masters
                         var imageUrl = await _svc.Update_ImageDataNew(dataReceived.TableName, ItemDesignId, "", "DesignPhoto5");
                     }
                     //rcp
+                }
+
+                if (dataReceived.TableName == "ItemMaster" && dataReceived.FieldName == "CoverImage")
+                {
+                    if (dataReceived.CoverImage != null && dataReceived.CoverImage.Length > 0)
+                    {
+                        await SaveFile(dataReceived.CoverImage, "ItemCover_", ItemDesignId, "CoverImage", "ItemMaster");
+                    }
+                    else
+                    {
+                        var imageUrl = await _svc.Update_ImageDataNew(dataReceived.TableName, ItemDesignId, "", "CoverImage");
+                    }
                 }
 
                 /****/

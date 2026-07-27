@@ -29,6 +29,8 @@ BEGIN
        ,ISNULL(IM.UnitConversion,0) AS UnitConversion
        ,ISNULL(IM.ShortDescription,'') AS ShortDescription
        ,ISNULL(IM.FullDescription,'') AS FullDescription
+       ,CASE WHEN ISNULL(IM.CoverImage,'')='' THEN '' ELSE 'https://accountingwkr.shinewellsofttech.co.in/ItemImages/' + IM.CoverImage END AS CoverImage
+       ,CASE WHEN ISNULL(IM.CoverImage,'')='' THEN '' ELSE 'https://accountingwkr.shinewellsofttech.co.in/ItemImages/Thumbnails_300/' + IM.CoverImage END AS CoverImage_Thumb
        ,@F_UserMaster AS PassedUserMaster
        ,ISNULL((
             SELECT SUM(V.AvailableQty)

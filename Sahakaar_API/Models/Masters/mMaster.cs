@@ -63,6 +63,7 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_CategoryMaster { get; set; } = 0;
         public string ItemName { get; set; } = null;
         public bool HasSize { get; set; } = false;
+        public mImageData CoverImage { get; set; }
         public List<mItemDesign> DesignDetails { get; set; }
     }
     public class mItemDesign
@@ -265,6 +266,7 @@ namespace Sahakaar_API.Models.Masters
         public string TableName { get; set; } = string.Empty;
         public string FieldName { get; set; } = string.Empty;
         public string FieldValue { get; set; } = string.Empty;
+        public IFormFile CoverImage { get; set; }
         public IFormFile DesignPhoto { get; set; }
         public IFormFile DesignPhoto2 { get; set; }
         public IFormFile DesignPhoto3 { get; set; }
