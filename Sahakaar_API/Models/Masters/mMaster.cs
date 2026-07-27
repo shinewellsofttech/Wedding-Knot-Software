@@ -42,6 +42,12 @@ namespace Sahakaar_API.Models.Masters
         public string EmailId { get; set; } = string.Empty;
         public decimal UserId { get; set; } = 0;
         public decimal F_GSTGroupMaster { get; set; } = 0;
+        public string ContactAddress { get; set; } = string.Empty;
+        public string ContactPhone { get; set; } = string.Empty;
+        public string ContactEmail { get; set; } = string.Empty;
+        public string ContactWorkingHours { get; set; } = string.Empty;
+        public string Latitude { get; set; } = string.Empty;
+        public string Longitude { get; set; } = string.Empty;
     }
     public class mItemMainGroupMaster
     {

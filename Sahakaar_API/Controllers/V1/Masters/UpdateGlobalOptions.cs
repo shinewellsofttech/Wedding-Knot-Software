@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -76,6 +76,12 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("EmailId", dataReceived.EmailId, DbType.String);
                 dbPara.Add("UserId", dataReceived.UserId, DbType.Decimal);
                 dbPara.Add("F_GSTGroupMaster", dataReceived.F_GSTGroupMaster, DbType.Decimal);
+                dbPara.Add("ContactAddress", dataReceived.ContactAddress, DbType.String);
+                dbPara.Add("ContactPhone", dataReceived.ContactPhone, DbType.String);
+                dbPara.Add("ContactEmail", dataReceived.ContactEmail, DbType.String);
+                dbPara.Add("ContactWorkingHours", dataReceived.ContactWorkingHours, DbType.String);
+                dbPara.Add("Latitude", dataReceived.Latitude, DbType.String);
+                dbPara.Add("Longitude", dataReceived.Longitude, DbType.String);
 
 
                 /****/
