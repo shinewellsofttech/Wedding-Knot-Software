@@ -1,0 +1,504 @@
+Text                                                                                                                                                                                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                                                                                                                                                                                             
+
+                                                                                                                                                                                                                                                             
+ALTER PROCEDURE [dbo].[UpdateItemAndItemDesignMaster]        
+                                                                                                                                                                                               
+(        
+                                                                                                                                                                                                                                                    
+    @Id NUMERIC(18,0),        
+                                                                                                                                                                                                                               
+    @TableName NVARCHAR(100) = NULL,        
+                                                                                                                                                                                                                 
+    @FieldName NVARCHAR(100) = NULL,        
+                                                                                                                                                                                                                 
+    @FieldValue NVARCHAR(MAX) = NULL,        
+                                                                                                                                                                                                                
+    @UserId NUMERIC(18,0)        
+                                                                                                                                                                                                                            
+)        
+                                                                                                                                                                                                                                                    
+AS        
+                                                                                                                                                                                                                                                   
+BEGIN        
+                                                                                                                                                                                                                                                
+    SET NOCOUNT ON;        
+                                                                                                                                                                                                                                  
+      
+                                                                                                                                                                                                                                                       
+    -- ?? Agar TableName NULL ya empty ho to kuch nahi karna      
+                                                                                                                                                                                           
+ IF @TableName IS NULL OR LTRIM(RTRIM(@TableName)) = ''      
+                                                                                                                                                                                                
+    BEGIN      
+                                                                                                                                                                                                                                              
+        SELECT @Id AS Id;      
+                                                                                                                                                                                                                              
+        RETURN;      
+                                                                                                                                                                                                                                        
+    END      
+                                                                                                                                                                                                                                                
+    
+                                                                                                                                                                                                                                                         
+    IF @FieldName IS NULL OR LTRIM(RTRIM(@FieldName)) = ''      
+                                                                                                                                                                                             
+    BEGIN      
+                                                                                                                                                                                                                                              
+        SELECT @Id AS Id;      
+                                                                                                                                                                                                                              
+        RETURN;      
+                                                                                                                                                                                                                                        
+    END      
+                                                                                                                                                                                                                                                
+    
+                                                                                                                                                                                                                                                         
+ IF @TableName = 'ItemMaster'    
+                                                                                                                                                                                                                            
+ BEGIN    
+                                                                                                                                                                                                                                                   
+  IF @FieldName = 'ItemName'        
+                                                                                                                                                                                                                         
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET ItemName = @FieldValue,      
+                                                                                                                                                                                                                      
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'HasSize'        
+                                                                                                                                                                                                                     
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET HasSize = TRY_CAST(@FieldValue AS bit),      
+                                                                                                                                                                                                      
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'F_CategoryMaster'        
+                                                                                                                                                                                                            
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET F_CategoryMaster = TRY_CAST(@FieldValue AS NUMERIC(18,0)),      
+                                                                                                                                                                                   
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'HSNCode'        
+                                                                                                                                                                                                                     
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET HSNCode = @FieldValue,      
+                                                                                                                                                                                                                       
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END     
+                                                                                                                                                                                                                                                   
+  ELSE IF @FieldName = 'F_GSTGroupMaster'        
+                                                                                                                                                                                                            
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET F_GSTGroupMaster = TRY_CAST(@FieldValue AS NUMERIC(18,0)),      
+                                                                                                                                                                                   
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END       
+                                                                                                                                                                                                                                                 
+  ELSE IF @FieldName = 'F_UnitMaster'        
+                                                                                                                                                                                                                
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET F_UnitMaster = TRY_CAST(@FieldValue AS NUMERIC(18,0)),      
+                                                                                                                                                                                       
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END       
+                                                                                                                                                                                                                                                 
+  ELSE IF @FieldName = 'F_MaterialMaster'        
+                                                                                                                                                                                                            
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET F_MaterialMaster = TRY_CAST(@FieldValue AS NUMERIC(18,0)),      
+                                                                                                                                                                                   
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END       
+                                                                                                                                                                                                                                                 
+  ELSE IF @FieldName = 'UnitConversion'        
+                                                                                                                                                                                                              
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET UnitConversion = TRY_CAST(@FieldValue AS NUMERIC(18,0)),      
+                                                                                                                                                                                     
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END       
+                                                                                                                                                                                                                                                 
+  ELSE IF @FieldName = 'ShortDescription'        
+                                                                                                                                                                                                            
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET ShortDescription = @FieldValue,      
+                                                                                                                                                                                                              
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END       
+                                                                                                                                                                                                                                                 
+  ELSE IF @FieldName = 'FullDescription'        
+                                                                                                                                                                                                             
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemMaster       
+                                                                                                                                                                                                                               
+      SET FullDescription = @FieldValue,      
+                                                                                                                                                                                                               
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END       
+                                                                                                                                                                                                                                                 
+  ELSE IF @FieldName = 'CoverImage'
+  BEGIN
+      SELECT @Id AS Id;
+      RETURN;
+  END
+  ELSE        
+                                                                                                                                                                                                                                               
+  BEGIN        
+                                                                                                                                                                                                                                              
+      RAISERROR('Invalid field name', 16, 1);        
+                                                                                                                                                                                                        
+      RETURN;      
+                                                                                                                                                                                                                                          
+  END       
+                                                                                                                                                                                                                                                 
+ END    
+                                                                                                                                                                                                                                                     
+ ELSE IF @TableName = 'ItemDesignMaster'    
+                                                                                                                                                                                                                 
+ BEGIN    
+                                                                                                                                                                                                                                                   
+  IF @FieldName = 'F_ItemMaster'        
+                                                                                                                                                                                                                     
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET F_ItemMaster = TRY_CAST(@FieldValue AS NUMERIC(18,0)),     
+                                                                                                                                                                                        
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+      UserId = @UserId       
+                                                                                                                                                                                                                                
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'SizeName'        
+                                                                                                                                                                                                                    
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET SizeName = @FieldValue,      
+                                                                                                                                                                                                                      
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'SalePrice'        
+                                                                                                                                                                                                                   
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET SalePrice = TRY_CAST(@FieldValue AS NUMERIC(18,2)),     
+                                                                                                                                                                                           
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'Barcode'        
+                                                                                                                                                                                                                     
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET Barcode = @FieldValue,      
+                                                                                                                                                                                                                       
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'VideoLink'        
+                                                                                                                                                                                                                   
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET VideoLink = @FieldValue,      
+                                                                                                                                                                                                                     
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'OpeningStock'        
+                                                                                                                                                                                                                
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET OpeningStock = TRY_CAST(@FieldValue AS NUMERIC(18,2)),      
+                                                                                                                                                                                       
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END     
+                                                                                                                                                                                                                                                   
+  ELSE IF @FieldName = 'Length'        
+                                                                                                                                                                                                                      
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET [Length] = @FieldValue,     
+                                                                                                                                                                                                                       
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END    
+                                                                                                                                                                                                                                                    
+  ELSE IF @FieldName = 'Width'        
+                                                                                                                                                                                                                       
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET Width = @FieldValue,     
+                                                                                                                                                                                                                          
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END    
+                                                                                                                                                                                                                                                    
+  ELSE IF @FieldName = 'Height'        
+                                                                                                                                                                                                                      
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET Height = @FieldValue,     
+                                                                                                                                                                                                                         
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END    
+                                                                                                                                                                                                                                                    
+  ELSE IF @FieldName = 'Weight'        
+                                                                                                                                                                                                                      
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET [Weight] = @FieldValue,     
+                                                                                                                                                                                                                       
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END    
+                                                                                                                                                                                                                                                    
+  ELSE IF @FieldName = 'UnitConversion'        
+                                                                                                                                                                                                              
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET UnitConversion = TRY_CAST(@FieldValue AS NUMERIC(18,2)),      
+                                                                                                                                                                                     
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END      
+                                                                                                                                                                                                                                                  
+  ELSE IF @FieldName = 'PurchaseRate'        
+                                                                                                                                                                                                                
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET PurchaseRate = TRY_CAST(@FieldValue AS NUMERIC(18,2)),     
+                                                                                                                                                                                        
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END       
+                                                                                                                                                                                                                                                 
+  ELSE IF @FieldName = 'EcomPrice'        
+                                                                                                                                                                                                                   
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET EcomPrice = TRY_CAST(@FieldValue AS NUMERIC(18,2)),     
+                                                                                                                                                                                           
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'IsEcom'        
+                                                                                                                                                                                                                      
+  BEGIN        
+                                                                                                                                                                                                                                              
+      UPDATE ItemDesignMaster       
+                                                                                                                                                                                                                         
+      SET IsEcom = TRY_CAST(@FieldValue AS bit),      
+                                                                                                                                                                                                       
+          LastUpdateOn = GETDATE(),      
+                                                                                                                                                                                                                    
+          UserId = @UserId       
+                                                                                                                                                                                                                            
+      WHERE Id = @Id;        
+                                                                                                                                                                                                                                
+  END        
+                                                                                                                                                                                                                                                
+  ELSE IF @FieldName = 'DesignPhoto' OR @FieldName = 'DesignPhoto2' OR @FieldName = 'DesignPhoto3' OR @FieldName = 'DesignPhoto4' OR @FieldName = 'DesignPhoto5'    
+                                                                                         
+  BEGIN        
+                                                                                                                                                                                                                                              
+      SELECT @Id AS Id;      
+                                                                                                                                                                                                                                
+   RETURN;        
+                                                                                                                                                                                                                                           
+  END      
+                                                                                                                                                                                                                                                  
+  ELSE        
+                                                                                                                                                                                                                                               
+  BEGIN        
+                                                                                                                                                                                                                                              
+      RAISERROR('Invalid field name', 16, 1);        
+                                                                                                                                                                                                        
+      RETURN;      
+                                                                                                                                                                                                                                          
+  END 
+                                                                                                                                                                                                                                                       
+ END    
+                                                                                                                                                                                                                                                     
+    ELSE        
+                                                                                                                                                                                                                                             
+    BEGIN        
+                                                                                                                                                                                                                                            
+        RAISERROR('Invalid table name', 16, 1);        
+                                                                                                                                                                                                      
+        RETURN;      
+                                                                                                                                                                                                                                        
+    END       
+                                                                                                                                                                                                                                               
+     
+                                                                                                                                                                                                                                                        
+ -- ?? Common return      
+                                                                                                                                                                                                                                   
+    SELECT @Id AS Id;        
+                                                                                                                                                                                                                                
+END                                                                                                                                                                                                                                                            
