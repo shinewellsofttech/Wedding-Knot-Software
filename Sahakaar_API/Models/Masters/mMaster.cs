@@ -621,4 +621,19 @@ namespace Sahakaar_API.Models.Masters
         public decimal UserId { get; set; } = 0;
         public decimal IsDetailed { get; set; } = 0;
     }
+    public class mBlogMaster
+    {
+        public string BlogTitle { get; set; } = string.Empty;
+        public string Slug { get; set; } = string.Empty;
+        public string Author { get; set; } = string.Empty;
+        public string ReadTime { get; set; } = string.Empty;
+        public DateTime? PublishDate { get; set; } = null;
+        public IFormFile PrimaryImage { get; set; } 
+        public IFormFile SecondaryImage { get; set; } 
+        public string Tags { get; set; } = string.Empty;
+        public string ShortSummary { get; set; } = string.Empty;
+        public string FullContent { get; set; } = string.Empty;
+        public decimal UserId { get; set; } = 0;
+    }
+    
 }

@@ -48,6 +48,7 @@
     <Folder Include="MemberImages\Thumbnails\" />
     <Folder Include="MemberImages\Thumbnails_300\" />
     <Folder Include="ItemImages\" />
+    <Folder Include="Blogs\" />
   </ItemGroup>
 
 
