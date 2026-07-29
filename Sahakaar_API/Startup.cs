@@ -170,12 +170,12 @@ namespace Sahakaar_API
                 Path.Combine(Directory.GetCurrentDirectory(), "ItemImages")),
                 RequestPath = "/ItemImages"
             });
-            //app.UseStaticFiles(new StaticFileOptions
-            //{
-            //    FileProvider = new PhysicalFileProvider(
-            //    Path.Combine(Directory.GetCurrentDirectory(), "ProductImages")),
-            //    RequestPath = "/ProductImages"
-            //});
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                Path.Combine(Directory.GetCurrentDirectory(), "Blogs")),
+                RequestPath = "/Blogs"
+            });
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>

@@ -77,8 +77,8 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("Author", dataReceived.Author, DbType.String);
                 dbPara.Add("ReadTime", dataReceived.ReadTime, DbType.String);
                 dbPara.Add("PublishDate", dataReceived.PublishDate, DbType.DateTime);
-                dbPara.Add("PrimaryImage", dataReceived.PrimaryImage, DbType.String);
-                dbPara.Add("SecondaryImage", dataReceived.SecondaryImage, DbType.String);
+              //  dbPara.Add("PrimaryImage", dataReceived.PrimaryImage, DbType.String);
+              //  dbPara.Add("SecondaryImage", dataReceived.SecondaryImage, DbType.String);
                 dbPara.Add("Tags", dataReceived.Tags, DbType.String);
                 dbPara.Add("ShortSummary", dataReceived.ShortSummary, DbType.String);
                 dbPara.Add("FullContent", dataReceived.FullContent, DbType.String);
