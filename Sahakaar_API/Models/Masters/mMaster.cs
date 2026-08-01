@@ -548,6 +548,8 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_LedgerMaster_IGST { get; set; } = 0;
         public string CustomerName { get; set; } = string.Empty;
         public string MobileNo { get; set; } = string.Empty;
+        public decimal F_RefundPaymentMode { get; set; } = 0;
+        
     }
     public class mMoneyReceipt
     {

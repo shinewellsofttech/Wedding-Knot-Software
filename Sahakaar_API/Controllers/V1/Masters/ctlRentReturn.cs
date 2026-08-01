@@ -87,6 +87,7 @@ namespace Sahakaar_API.Controllers.V1.Masters
                 dbPara.Add("F_LedgerMaster_IGST", dataReceived.F_LedgerMaster_IGST, DbType.Decimal);
                 dbPara.Add("CustomerName", dataReceived.CustomerName, DbType.String);
                 dbPara.Add("MobileNo", dataReceived.MobileNo, DbType.String);
+                dbPara.Add("F_RefundPaymentMode", dataReceived.F_RefundPaymentMode, DbType.Decimal);
 
                 /****/
                 var data = mModel;
