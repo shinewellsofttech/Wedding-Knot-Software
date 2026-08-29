@@ -637,5 +637,13 @@ namespace Sahakaar_API.Models.Masters
         public string FullContent { get; set; } = string.Empty;
         public decimal UserId { get; set; } = 0;
     }
-    
+    public class mGetOutstandingReceivablePayable
+    {
+        public decimal PartyId { get; set; } = 0;
+        public string PartyType { get; set; } = string.Empty;
+        public DateTime? FromDate { get; set; } = null;
+        public DateTime? ToDate { get; set; } = null;
+        public decimal OverDueOnly { get; set; } = 0;
+    }
+
 }
