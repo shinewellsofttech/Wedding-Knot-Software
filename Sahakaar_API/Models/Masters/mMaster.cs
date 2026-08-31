@@ -379,6 +379,8 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_LedgerMaster_CGST { get; set; } = 0;
         public decimal F_LedgerMaster_SGST { get; set; } = 0;
         public decimal F_LedgerMaster_IGST { get; set; } = 0;
+        public decimal TotalDiscount { get; set; } = 0;
+        public decimal F_LedgerMaster_Discount { get; set; } = 0;
 
     }
     public class mItemSchemeMaster

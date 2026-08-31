@@ -158,22 +158,27 @@ namespace Sahakaar_API
             });
 
             // Allow image folder access
+            var memberImagesPath = Path.Combine(Directory.GetCurrentDirectory(), "MemberImages");
+            if (!Directory.Exists(memberImagesPath)) Directory.CreateDirectory(memberImagesPath);
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider = new PhysicalFileProvider(
-                Path.Combine(Directory.GetCurrentDirectory(), "MemberImages")),
+                FileProvider = new PhysicalFileProvider(memberImagesPath),
                 RequestPath = "/MemberImages"
             });
+
+            var itemImagesPath = Path.Combine(Directory.GetCurrentDirectory(), "ItemImages");
+            if (!Directory.Exists(itemImagesPath)) Directory.CreateDirectory(itemImagesPath);
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider = new PhysicalFileProvider(
-                Path.Combine(Directory.GetCurrentDirectory(), "ItemImages")),
+                FileProvider = new PhysicalFileProvider(itemImagesPath),
                 RequestPath = "/ItemImages"
             });
+
+            var blogsPath = Path.Combine(Directory.GetCurrentDirectory(), "Blogs");
+            if (!Directory.Exists(blogsPath)) Directory.CreateDirectory(blogsPath);
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider = new PhysicalFileProvider(
-                Path.Combine(Directory.GetCurrentDirectory(), "Blogs")),
+                FileProvider = new PhysicalFileProvider(blogsPath),
                 RequestPath = "/Blogs"
             });
 

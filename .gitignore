@@ -21,3 +21,5 @@ build/
 check.ps1
 inspect_getlist.ps1
 inspect_getlist_start.ps1
+
+*.ps1

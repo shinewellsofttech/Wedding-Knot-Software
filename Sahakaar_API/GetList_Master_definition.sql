@@ -702,6 +702,9 @@ BEGIN
 			,ISNULL(PEH.EntryNo,'') AS EntryNo
 			,PEH.EntryDate
 			,ISNULL(PEH.F_LedgerMaster,0) AS F_LedgerMaster
+			,ISNULL(LM.Name,'') AS VendorName
+			,ISNULL(LM.MobileNo,'') AS MobileNo
+			,ISNULL(LM.PhoneNo,'') AS PhoneNo
 			,ISNULL(PEH.TotalQty,0) AS TotalQty
 			,ISNULL(PEH.Remarks,'') AS Remarks
 			,ISNULL(TotalCGST,0)   AS TotalCGST
@@ -747,6 +750,7 @@ BEGIN
 	        ) AS PurchaseLDetails
 
 	   FROM PurchaseEntryH PEH
+	   LEFT JOIN LedgerMaster LM ON LM.Id = PEH.F_LedgerMaster
 	   WHERE (@Id = 0 OR PEH.Id = @Id)
   END
 
@@ -853,6 +857,9 @@ BEGIN
 			,ISNULL(SEH.EntryNo,'') AS EntryNo
 			,SEH.EntryDate
 			,ISNULL(SEH.F_LedgerMaster,0) AS F_LedgerMaster
+			,ISNULL(LM.Name,'') AS CustomerName
+			,ISNULL(LM.MobileNo,'') AS MobileNo
+			,ISNULL(LM.PhoneNo,'') AS PhoneNo
 			,ISNULL(SEH.Remarks,'') AS Remarks
 			,ISNULL(SEH.TotalQty,0) AS TotalQty
 			,ISNULL(SEH.TotalCGST,0)   AS TotalCGST
@@ -908,6 +915,7 @@ BEGIN
 	        ) AS SalesLOtherChargesDetails
 
 	   FROM SalesEntryH SEH
+	   LEFT JOIN LedgerMaster LM ON LM.Id = SEH.F_LedgerMaster
 	   WHERE (@Id = 0 OR SEH.Id = @Id)
   END
 
@@ -1105,7 +1113,7 @@ BEGIN
   ELSE IF (@ListFor = 'SalesPartyLedgerMaster')
   BEGIN
      SET @TableName = 'LedgerMaster'                                                                   
-     SET @FIELDS = ' TBL.Id, TBL.Name, TBL.F_LedgerGroupMaster,
+     SET @FIELDS = ' TBL.Id, TBL.Name, ISNULL(TBL.MobileNo,'''') AS MobileNo, ISNULL(TBL.PhoneNo,'''') AS PhoneNo, TBL.F_LedgerGroupMaster,
 					 CASE WHEN ISNULL(TBL.F_StateMaster,''0'') = (SELECT ISNULL(F_StateMaster,''0'') AS F_StateMaster  FROM GlobalOptions) THEN 1 ELSE 1 END AS IsInState '  
 	 SET @WHERE = ' WHERE TBL.F_LedgerGroupMaster IN (''36'',''8'',''4'') '  
 	 SET @OrderBY = ' ORDER BY TBL.Name '
@@ -1114,7 +1122,7 @@ BEGIN
   ELSE IF (@ListFor = 'PurchasePartyLedgerMaster')
   BEGIN
      SET @TableName = 'LedgerMaster'                                                                   
-     SET @FIELDS = ' TBL.Id, TBL.Name, TBL.F_LedgerGroupMaster,
+     SET @FIELDS = ' TBL.Id, TBL.Name, ISNULL(TBL.MobileNo,'''') AS MobileNo, ISNULL(TBL.PhoneNo,'''') AS PhoneNo, TBL.F_LedgerGroupMaster,
 					 CASE WHEN ISNULL(TBL.F_StateMaster,''0'') = (SELECT ISNULL(F_StateMaster,''0'') AS F_StateMaster  FROM GlobalOptions) THEN 1 ELSE 1 END AS IsInState '  
 	 SET @WHERE = ' WHERE TBL.F_LedgerGroupMaster IN (''35'',''8'',''4'') '  
 	 SET @OrderBY = ' ORDER BY TBL.Name '

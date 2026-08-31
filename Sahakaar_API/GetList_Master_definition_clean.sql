@@ -1383,12 +1383,12 @@ OpeningStock
 			   LEFT JOIN ItemDesignMaster IDM ON IDM.Id = PEL.F_ItemDesignMaster
 			   LEFT JOIN ItemMaster IM ON IM.Id = IDM.F_ItemMaster
 			   LEFT JOIN GSTGroupMaster GGM ON GGM.Id = IM.F_GSTGroupMaster
-	           WHERE PEL.
-F_PurchaseEntryH = PEH.Id
+	           WHERE PEL.F_PurchaseEntryH = PEH.Id
 	           FOR JSON PATH
 	        ) AS PurchaseLDetails
 
 	   FROM PurchaseEntryH PEH
+	   LEFT JOIN LedgerMaster LM ON LM.Id = PEH.F_LedgerMaster
 	   WHERE (@Id = 0 OR PEH.Id = @Id)
                                                                                                           
   END
@@ -1662,6 +1662,7 @@ mbnail/' +  LEFT(SEL.DesignPhoto, LEN(SEL.DesignPhoto) - CHARINDEX('.', REVERSE(
 	        ) AS SalesLOtherChargesDetails
 
 	   FROM SalesEntryH SEH
+	   LEFT JOIN LedgerMaster LM ON LM.Id = SEH.F_LedgerMaster
 	   WHERE (@Id = 0 OR SEH.Id = @Id)
                                 
   END
