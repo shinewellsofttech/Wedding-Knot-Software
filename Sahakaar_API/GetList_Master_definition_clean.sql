@@ -1590,6 +1590,7 @@ esignPhoto5
                                                                                                                                                                                                                     
 			,ISNULL(SEH.TotalAmount,0) AS TotalAmount
 			,ISNULL(SEH.TotalOtherCharges,0) AS TotalOtherCharges
+			,ISNULL(SEH.TotalDiscount,0) AS TotalDiscount
 			,ISNULL(SEH.UserId,0) AS UserId
                                                                                                                      
 			,ISNULL(SEH.F_VoucherH,0) AS F_VoucherH
@@ -2588,6 +2589,7 @@ entReturnH = RRH.Id
                                                                                                                                                                                                                     
 			,ISNULL(SEH.TotalAmount,0) AS TotalAmount
 			,ISNULL(SEH.TotalOtherCharges,0) AS TotalOtherCharges
+			,ISNULL(SEH.TotalDiscount,0) AS TotalDiscount
 			,ISNULL(SEH.UserId,0) AS UserId
                                                                                                                      
 			,ISNULL(SEH.F_VoucherH,0) AS F_VoucherH

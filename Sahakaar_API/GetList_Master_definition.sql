@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[GetList_Master]                            
+CREATE OR ALTER PROCEDURE [dbo].[GetList_Master]                            
  @Id numeric(18,0) = 0,                                                                                                        
  @IdFieldName nvarchar(50) = 'TBL.Id',                                                                                                        
  @ListFor NVARCHAR(max) = ''                                                                                                        
@@ -868,6 +868,7 @@ BEGIN
 			,ISNULL(SEH.TotalTax,0)	   AS TotalTax
 			,ISNULL(SEH.TotalAmount,0) AS TotalAmount
 			,ISNULL(SEH.TotalOtherCharges,0) AS TotalOtherCharges
+			,ISNULL(SEH.TotalDiscount,0) AS TotalDiscount
 			,ISNULL(SEH.UserId,0) AS UserId
 			,ISNULL(SEH.F_VoucherH,0) AS F_VoucherH
 			,ISNULL(SEH.F_CompanyMaster,0) AS F_CompanyMaster
@@ -1443,6 +1444,7 @@ BEGIN
 			,ISNULL(SEH.TotalTax,0)	   AS TotalTax
 			,ISNULL(SEH.TotalAmount,0) AS TotalAmount
 			,ISNULL(SEH.TotalOtherCharges,0) AS TotalOtherCharges
+			,ISNULL(SEH.TotalDiscount,0) AS TotalDiscount
 			,ISNULL(SEH.UserId,0) AS UserId
 			,ISNULL(SEH.F_VoucherH,0) AS F_VoucherH
 			,ISNULL(SEH.F_CompanyMaster,0) AS F_CompanyMaster
