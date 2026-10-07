@@ -334,6 +334,7 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_LedgerMaster_CGST { get; set; } = 0;
         public decimal F_LedgerMaster_SGST { get; set; } = 0;
         public decimal F_LedgerMaster_IGST { get; set; } = 0;
+        public string OtherChargesJson { get; set; } = string.Empty;
     }
     public class mGetItemDetailByBarcode
     {
@@ -446,6 +447,7 @@ namespace Sahakaar_API.Models.Masters
         public decimal F_LedgerMaster_CGST { get; set; } = 0;
         public decimal F_LedgerMaster_SGST { get; set; } = 0;
         public decimal F_LedgerMaster_IGST { get; set; } = 0;
+        public string OtherChargesJson { get; set; } = string.Empty;
     }
     public class mSalesReturn
     {
